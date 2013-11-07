@@ -1,0 +1,558 @@
+%
+% Carátula oficial de 75.02 Algoritmos y Programación I, cátedra Cardozo.
+%
+% Basado en el template realizado por Diego Essaya, disponible en
+%                                                         http://lug.fi.uba.ar
+% Modificado por Michel Peterson.
+% Modificado por Sebastián Santisi.
+
+%
+% Acá se define el tamaño de letra principal:
+%
+\documentclass[11pt]{article}
+
+%------------------------- Carga de paquetes ---------------------------
+%
+% Si no necesitás algún paquete, comentalo.
+%
+
+%
+% Definición del tamaño de página y los márgenes:
+%
+\usepackage[a4paper,headheight=14pt,scale={0.7,0.8},hoffset=0.5cm]{geometry}
+
+%
+% Vamos a escribir en castellano:
+%
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+
+%
+% Si preferís el tipo de letra Helvetica (Arial), descomentá las siguientes
+% dos lineas (las fórmulas seguirán estando en Times):
+%
+%\usepackage{helvet}
+%\renewcommand\familydefault{\sfdefault}
+
+%
+% El paquete amsmath agrega algunas funcionalidades extra a las fórmulas. 
+% Además defino la numeración de las tablas y figuras al estilo "Figura 2.3", 
+% en lugar de "Figura 7". (Por lo tanto, aunque no uses fórmulas, si querés
+% este tipo de numeración dejá el paquete amsmath descomentado).
+%
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+%
+% Para tener cabecera y pie de página con un estilo personalizado:
+%
+\usepackage{fancyhdr}
+
+%
+% Para poner el texto "Figura X" en negrita:
+% (Si no tenés el paquete 'caption2', probá con 'caption').
+%
+\usepackage[hang,bf]{caption2}
+
+%
+% Para poder usar subfiguras: (al estilo Figura 2.3(b) )
+%
+%\usepackage{subfigure}
+
+%
+% Para poder agregar notas al pie en tablas:
+%
+%\usepackage{threeparttable}
+
+%------------------------------ graphicx ----------------------------------
+%
+% Para incluir imágenes, el siguiente código carga el paquete graphicx 
+% según se esté generando un archivo dvi o un pdf (con pdflatex). 
+
+% Para generar dvi, descomentá la linea siguiente:
+%\usepackage[dvips]{graphicx}
+
+% Para generar pdf, descomentá las dos lineas seguientes:
+\usepackage[pdftex]{graphicx}
+\pdfcompresslevel=9
+
+%
+% Todas las imágenes están en el directorio tp-img:
+%
+\newcommand{\imgdir}{includes}
+\graphicspath{{\imgdir/}}
+%
+%------------------------------ graphicx ----------------------------------
+
+% Necesitas este paquete si haces los diagrámas de flujo en el prográma Dia 
+%\usepackage{tikz}
+
+%------------------------- Inicio del documento ---------------------------
+
+\begin{document}
+
+%
+% Hago que en la cabecera de página se muestre a la derecha la sección,
+% y en el pie, en número de página a la derecha:
+%
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{}{\thesection\ \ #1}}
+\lhead{}
+\chead{}
+\rhead{\rightmark}
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage}
+
+%
+% Carátula:
+%
+\begin{titlepage}
+
+\thispagestyle{empty}
+\begin{center}
+\includegraphics[scale=0.2]{doc/imagenes/fiuba.jpg}\\
+\large{\textsc{Universidad de Buenos Aires}}\\
+\large{\textsc{Facultad De Ingeniería}}\\
+\small{Año 2013 - 2\textsuperscript{do} Cuatrimestre}\\
+\Large{\underline{\textsc{Información en las organizaciones (71.13)}}}
+\end{center}
+
+\vfill
+
+\begin{center}
+\Large{\textit{TRABAJO DE CAMPO}}
+\end{center}
+
+\raggedright{\Large{\textit{INTEGRANTES}}}
+
+\begin{center}
+  Juan Ignacio Albanesi,	\textit{P. XX.XXX},	\textit{jalbanesi@gmail.com}		\\
+  Facundo Aristegui,		\textit{P. XX.XXX},	\textit{faristegui@fi.uba.ar}		\\
+  Guido Di Paolo,		\textit{P. XX.XXX},	\textit{guido.dipaolo@gmail.com}	\\
+  Flavio Ferro,			\textit{P. XX.XXX},	\textit{flavio.ff.37@gmail.com}		\\
+  Damián Franetovich,		\textit{P. XX.XXX},	\textit{damian168@gmail.com}		\\
+  karlo Ismael,			\textit{P. XX.XXX},	\textit{karlo.ismael@gmail.com}		\\
+  Yair Emmanuel Lisa,		\textit{P. XX.XXX},	\textit{yairlisa@gmail.com}		\\
+  Natalia Merino,		\textit{P. XX.XXX},	\textit{nati.merino@gmail.com}		\\
+  Leandro Percivati,		\textit{P. XX.XXX},	\textit{l.percivati@gmail.com}		\\
+  Sergio Matías Piano,		\textit{P. 85.191},	\textit{smpiano@gmail.com}		\\
+  Sebastian Rial,		\textit{P. 90.309},	\textit{riseba@gmail.com}		\\
+  Mauro Romeo,			\textit{P. XX.XXX},	\textit{mauropromeo@gmail.com}		\\
+\end{center}
+
+\vfill
+
+\hrule
+\vspace{0.2cm}
+
+\noindent\small{71.13 - Información en las organizaciones}
+
+\end{titlepage}
+
+%
+% Hago que las páginas se comiencen a contar a partir de aquí:
+%
+\setcounter{page}{1}
+
+%
+% Pongo el índice en una página aparte:
+%
+\newpage
+\tableofcontents
+
+\newpage
+\section{Compras (Circuito Relevado)}
+
+\newpage
+\subsection{Alcance}
+El circuito de \texttt{"}Compras\texttt{"} abarca desde que un sector solicitante detecta e informa la necesidad de un material para la producción, hasta el despacho y entrega del mismo.
+
+\subsection{Procedimiento}
+Un sector solicitante emite una Requisición de Compra por duplicado, indicando la necesidad de adquisición de materiales, firma el original y lo envía al área de compras.\\
+
+\indent El sector de compras verifica y controla si posee en stock lo solicitado en la Requisición de Compras. En caso de presentarse un faltante, se emite un Pedido de Cotización por duplicado, el cual se firma y se envía al proveedor, archivándose mientras tanto el duplicado de la cotización y la requisición de compras.
+
+\indent El proveedor emite una Cotización en base al Pedido de Cotización recibido y se la envía a compras\\
+
+\indent Compras recibe la Cotización del proveedor, y la compara con el Pedido de Cotización, y si hay discrepancias, realiza un nuevo Pedido de Cotización. Si no hay discrepancias, el área de compras, en base a cantidades y costos, evalúa si procede con la compra o no. En caso de proceder, se emite y se firma una Orden de Compra por triplicado. La original es enviada al Proveedor, el duplicado al área de Logística y el triplicado se envía a Pagos. Finalmente, se archiva la cotización y el pedido de cotización asociado, para futuras referencias. Si no se puede aceptar la cotización, se le informa al sector solicitante que la compra no puede realizarse en la forma solicitada.\\
+
+\indent El proveedor, en base a la orden de compra y siguiendo un circuito no relevado prepara los materiales solicitados. Emite remito por duplicado, y se envían junto con el pedido solicitado a Logística.\\
+
+\indent Logística, apoyándose en el duplicado de la OC, verifica que los materiales y remitos recibidos coincidan con lo solicitado. Si lo recibido coincide con lo solicitado, y los materiales no presentan fallas visibles a simple vista, se firma el duplicado del Rto y se le envía al Proveedor. Se emite y se firma un Parte de Recepción, que es enviado al sector solicitante para informarle que ya se dispone de los materiales que necesita. Se actualiza la Ficha de Stock, y se archiva el duplicado de la OC. Se envía el Rto original firmado a pagos.\\
+
+\indent Pagos, verifica que la orden de compra firmada coincida con el remito firmado correspondiente, y luego da inicio al circuito de pagos no relevado.\\
+
+
+\newpage
+\subsection{Cursograma}
+\includegraphics[scale=0.85]{doc/BarbieriCompras.png}\\
+
+\newpage
+\subsection{Manual de Cursograma de Compras}
+
+\includegraphics[scale=1]{doc/iconos/AlmTemp.png}(ARCHIVO PROVISORIO)\\\\
+1. Se archiva temporalmente la requisición de compra.\\
+2.	Ficha de Stock del almacén, tiene información sobre las existencias disponibles de materiales.\\
+3.	Se archiva temporalmente la Requisición de Compra, que tiene información sobre los materiales a comprar,  y el Pedido de cotización, que también tiene información sobre los elementos que se requiere comprar.\\
+4.	Archivo temporal del proveedor, contiene la información que el mismo posee sobre sus clientes.\\
+5.	El proveedor guarda temporalmente nuestro pedido de cotización original, y el duplicado de la cotización.\\
+6.	El proveedor mantiene en archivo temporal los documentos que ya tenía (Pedido de cotización original y duplicado de la cotización) y agrega el duplicado del remito.\\
+7.	Logística archiva temporalmente el duplicado de la orden de compra para cotejar con los materiales que le lleguen.\\
+8.	Ficha de Stock del almacén, tiene información sobre las existencias disponibles de materiales.\\
+9. Se archiva el duplicado de la orden de compra para controlar con el remito.\\\\
+\includegraphics[scale=1]{doc/iconos/Registro.png}(REGISTRO)\\\\
+1.	Registro de las cantidades de la compra en la Ficha de Stock\\\\
+\includegraphics[scale=1]{doc/iconos/EmisionDocumento.png}(EMISION DE DOCUMENTO)\\\\
+1.	Emisión de requisición de compra\\
+2.	Se emite el Pedido de cotización.\\
+3.	Se emite la cotización del proveedor.\\
+4.	Se emite la orden de compra.\\
+5.	Emisión del remito.\\
+6.	Se emite el parte de recepción.\\\\
+\includegraphics[scale=1]{doc/iconos/Firma.png}(FIRMA DE DOCUMENTO)\\\\
+1.	Se firma la requisición de compra\\
+2.	Se firma el Pedido de cotización.\\
+3.	Firma de la orden de compra.\\
+4.	Firma del remito.\\
+5.	Se firma el parte de recepción.\\\\
+\includegraphics[scale=1]{doc/iconos/DistribucionDocumentos.png}(ENVÍOS DE INFORMACIÓN)\\\\
+1.	Requisición de compra original, desde el sector solicitante hasta el sector de almacenes.\\
+2.	Pedido de cotización original, desde almacenes al proveedor.\\
+3.	Cotización original, del proveedor  a almacenes.\\
+4.	Orden de compra original y duplicado, De almacenes a logística y a pagos respectivamente.\\
+5.	Remito original, del proveedor a logística.\\
+6.	Remito original, de logística al proveedor \\
+7.	Parte de recepción original, desde logística al sector solicitante.\\
+8.	Remito original, desde logística a pagos.\\\\
+\includegraphics[scale=1]{doc/iconos/Formulario.png} (FORMULARIOS)\\\\
+1.	Requisición de compra, original y duplicado. Tiene información sobre los materiales que se requieren comprar.\\
+2.	Pedido de cotización, original y duplicado, tiene información sobre los materiales a comprar.\\
+3.	Cotización, original y duplicado, tiene información sobre precios de los materiales requeridos en el pedido de cotización.\\
+4.	Orden de compra, original, duplicado y triplicado. Notifica formalmente el deseo de realizar una compra al proveedor,  y tiene información sobre los materiales  a comprar, además de estar relacionada con el pedido de cotización anterior.\\
+5.	Remito, original y duplicado, Expresa cuales son los materiales que se están enviando junto con el mismo.\\
+6.	Parte de recepción, original y duplicado, indica cuáles fueron los materiales recibidos en condiciones.\\\\
+\includegraphics[scale=1]{doc/iconos/AlmacenamientoPermanente.png}(ALMACENAMIENTO DEFINITIVO)\\\\
+1.	El almacén guarda  en forma definitiva el original de la requisición de compra y el duplicado del pedido de cotización, para futuras referencias.\\
+2.	Se archiva en forma definitiva en el área de logística el duplicado de la orden de compra, y el duplicado del parte de recepción.\\
+3.	El sector solicitante archiva en forma definitiva el duplicado de la requisición de compra y el original del parte de recepción.\\\\
+\includegraphics[scale=1]{doc/iconos/OperacionControl.png}(OPERACIÓN Y CONTROL)\\\\
+1.	Se controla la requisición de compra con la ficha de stock para ver la necesidad de realizar una compra,\\
+2.	Se realiza un control utilizando el pedido de cotización y la cotización.\\
+3.	Se realiza un control utilizando el pedido de cotización, la cotización y la requisición de compra.\\
+4.	Se coteja la orden de compra con el remito para verificar materiales y cantidades.\\
+5.	Verificación entre el remito y la orden de compra. Da inicio al circuito de pagos.\\\\
+\includegraphics[scale=1]{doc/iconos/Decision.png}(SÍMBOLOS DE DECISIÓN)\\\\
+1.	¿Coincide la cotización con lo requerido en el pedido de cotización?\\
+2.	¿Es conveniente realizar la compra en estas condiciones?\\
+3.	¿Se condicen los materiales recibidos con los especificados en la compra?\\\\
+\includegraphics[scale=1]{doc/iconos/CNR.png} (CIRCUITOS NO RELEVADOS)\\\\
+1.	Circuito no relevado de manejo de ventas por parte del proveedor.\\
+2.	Circuito no relevado de pago a proveedores.\\\\\
+\includegraphics[scale=1]{doc/iconos/Operacion.png}(OPERACION)\\\\
+1.	Preparación de los materiales por parte del proveedor.\\
+
+\newpage
+\subsection{Formularios}
+\begin{itemize}
+\item {\bf FS} - Ficha de Stock
+\item {\bf OC} - Orden de Compra
+\item {\bf RC} - Requisición de Compra
+\item {\bf PC} - Pedido de Cotización
+\item {\bf PR} - Parte de Recepción
+\item {\bf ROT} - Remito
+\item {\bf COT} - Cotización
+\end{itemize}
+
+\newpage
+\subsubsection{Formulario - Orden de Compra}
+\includegraphics[width=23.5cm, height=15cm, angle=90]{doc/formularios/OrdenCompra.png}
+
+\newpage
+\subsubsection{Formulario - Manual de Orden de Compra}
+
+\begin{enumerate}
+\item Logo del emisor.
+\item Razón social del Proveedor.
+\item Domicilio del Proveedor.
+\item Ciudad y Provincia del Proveedor.
+\item Indica la divisa en la que se entabló la relación comercial.
+\item Nombre del documento emitido por Barbieri, en este caso, \texttt{"}Orden de Compra\texttt{"}.
+\item Condición de IVA del Proveedor.
+\item Forma de Pago.
+\item Número de CUIT de la empresa emisora.
+\item Indica si es agente de retención de IIBB (Ingresos Brutos).
+\item Estado de autorización del documento.
+\item Número de Orden de Compra. Debe ser único en la Empresa.
+\item Fecha de emisión del documento.
+\item Fecha de entrega pactada.
+\item Nombre del comprador.
+\item Domicilio de entrega.
+\item Código y descripción de los ítems que componen la Orden de Compra.
+\item Cantidad de unidades de cada ítem.
+\item Precio unitario de cada ítem.
+\item Descuento que se efectúa sobre la compra.
+\item Ídem.
+\item Ídem.
+\item Ídem.
+\item Ídem.
+\item Ídem.
+\item Costo del flete.
+\item Precio unitario final del producto, luego de aplicar descuentos y costo del flete.
+\item Monto de ítems: precio unitario multiplicado por la cantidad de ítems comprados.
+\end{enumerate}
+
+\newpage
+\begin{itemize}
+\item {\bf Sector emisor}: Compras.\\
+\item {\bf Objeto}: Realizar la compra de una serie de ítems a un Proveedor, especificando las condiciones de venta previamente pactadas.\\\\
+\item {\bf Nombre del documento}: Orden de Compra (OC).\\
+\item {\bf Carácter del documento}: Externo.\\
+\item {\bf Número de ejemplar}: Original y 2 (dos) copias.\\
+\item {\bf Destinatarios}: Proveedor, Pagos y Compras.\\
+\item {\bf Archivo}: dónde se almacena en forma definitiva el ejemplar.\\
+\end{itemize}
+
+\newpage
+\subsubsection{Formulario - Pedido de Cotización}
+\includegraphics[width=22cm, height=15cm, angle=90]{doc/formularios/PedidoCotizacion.png}
+
+\newpage
+\subsubsection{Formulario - Manual de Pedido de Cotización}
+
+\begin{enumerate}
+\item Logo del emisor.
+\item Persona que emite el documento.
+\item Razón Social del Proveedor al que se le envía el documento.
+\item Nombre del documento emitido por Barbieri, en este caso, \texttt{"}Pedido de Cotización\texttt{"}.
+\item Requerimiento: número único y correlativo.
+\item Fecha de emisión del documento.
+\item Fecha de vencimiento: fecha límite de validez del presupuesto solicitado que debe presentar el Proveedor.
+\item Descripción de cada ítem que compone el pedido.
+\item Cantidad solicitada de cada ítem.
+\item Unidad de Medida de cada ítem.
+\item Fecha de vencimiento de la cotización de cada ítem.
+\item Aclaraciones de cada ítem. Puede ser llenado tanto por el Cliente como por el Proveedor.
+\end{enumerate}
+
+\newpage
+\begin{itemize}
+\item {\bf Sector emisor}: Compras.\\
+\item {\bf Objeto}: Solicitar al proveedor una presupuesto para una serie de ítems que un determinado sector de la empresa (Sector Solicitante) necesita comprar para realizar su trabajo.\\
+\item {\bf Nombre del documento}: Pedido de Cotización (PC).\\
+\item {\bf Carácter del documento}: Externo.\\
+\item {\bf Número de ejemplares}: Original y 1(una) copia.\\
+\item {\bf Destinatarios}: Proveedor y Compras (copia).\\
+\item {\bf Archivo}: dónde se almacena en forma definitiva el ejemplar.\\
+\end{itemize}
+
+\newpage
+\section{Pagos(Circuito Relevado)}
+
+\newpage
+\subsection{Alcance}
+El circuito de pago a proveedores abarca desde la finalización del circuito de compras, con el sector pagos \texttt{"}cuentas a pagar\texttt{"} teniendo en su poder factura, remito y orden de compra, hasta que se realiza el pago correspondiente y se archiva el recibo junto con el legajo de pagos.
+
+\newpage
+\subsection{Procedimiento}
+
+Proveedor: El circuito inicia cuando el Proveedor emite la factura por duplicado y envía el original a Administración.\\
+
+Administración: Se reciben la Factura del proveedor. Se obtiene la Ficha del Proveedor correspondiente, se controlan los datos de los documentos detallados en el ítem anterior, y se realiza el registro de la compra.
+Se arma un legajo de pago, al cual se le adosan la Factura y el Remito. Se emite un comprobante de contabilización (orden de pago), por duplicado. Se firma el original. Este es enviado a Pago a proveedores y la copia (CC0) es archivada temporalmente, junto con la factura y remito.\\
+
+Pago a proveedores: Con el legajo de pago correspondiente se analiza cual pago está más próximo a vencer. Luego se procede a generar el cheque correspondiente, se lo firma. Luego, se lo envía a la Gerencia. \\
+
+Gerencia: Se controla que el legajo y comprobante de contabilización concuerde con los valores indicados en el cheque. Si todo está correcto se firma a este último, y por último, se marcan como pagado el comprobante de contabilización y el cheque. Si hay algún error se realiza un circuito no relevado para la anulación y reemisión del Cheque.\\
+
+Proveedor: Una vez recibido el cheque, se lo controla y en caso que esté correcto, se procede a la emisión del recibo por duplicado. El original (firmado) es enviado al área de Pago a proveedores (En caso de que haya error en el cheque, el mismo es devuelto al área de pagos)\\
+
+Administración: Controla que el recibo emitido por el proveedor concuerde con los valores del legajo. En caso de estar todo en corcordancia, se realiza la imputación contable. Luego se archivan definitivamente ambos documentos. Si el recibo emitido no concuerda con el legajo se envía el mismo al proveedor para que emita uno nuevo corregido.\\
+
+\newpage
+\subsection{Cursograma}
+\includegraphics[scale=0.85]{doc/BarbieriPagos.png}\\
+
+\newpage
+\subsection{Manual de Cursograma de Pagos}
+
+\includegraphics[scale=1]{doc/iconos/AlmTemp.png}(ARCHIVO PROVISORIO)\\\\
+1.	El proveedor archiva temporalmente copia de la Factura.\\
+2.	Administración tiene archivados la orden de compra original y una copia del remito.\\
+3.	Administración retiene una copia del Comprobante de Contabilización.\\
+4.	\\
+5.	Pago a proveedores retiene el Legajo y el original del Comprobante de Contabilización.\\\\
+\includegraphics[scale=1]{doc/iconos/Registro.png}(REGISTRO)\\\\
+1.	Se Registra la factura a pagar en la ficha del proveedor.\\
+2.	Se Asienta la operación de pago en los libros contables.\\
+\includegraphics[scale=1]{doc/iconos/EmisionDocumento.png}(EMISION DE DOCUMENTO)\\\\
+1.	Emisión de la Factura por parte del Proveedor\\
+2.	Emisión del Comprobante de Contabilización por parte de Administración\\
+3.	Emisión del Cheque por parte de Pago a Proveedores\\
+4.	Emisión del recibo por parte del Proveedor\\\\
+\includegraphics[scale=1]{doc/iconos/Firma.png}(FIRMA DE DOCUMENTO)\\\\
+1.	Firma del Cheque\\
+2.	Segunda firma del Cheque\\\\
+\includegraphics[scale=1]{doc/iconos/DistribucionDocumentos.png}(ENVÍOS DE INFORMACIÓN)\\\\
+1.	El Proveedor envía la Factura original a Administración\\
+2.	Administración envía el Comprobante de Contabilización original y el Legajo a Pago a Proveedores\\
+3.	Pago a Proveedores envía el Legajo, el CC0 y el Cheque a Gerencia.\\
+4.	Gerencia devuelve el Legajo, el Cheque y el CC0 a Pago a Proveedores.\\
+5.	Pago a Proveedores envía el Cheque al Proveedor.\\
+6.	El Proveedor envía el Recibo original a a Pago a Proveedores.\\
+7.	Pago a Proveedores envía el Legajo a Administración.\\\\
+\includegraphics[scale=1]{doc/iconos/Formulario.png} (FORMULARIOS)\\\\
+1.	Factura del Proveedor, contiene los detalles sobre los productos e importes a pagar.\\
+2.	Comprobante de Contabilización, confima el registro en la Ficha del Proveedor y habilita el pago al mismo.\\
+3.	Cheque\\
+4.	Recibo, confirmación por parte del Proveedor de la recepción del pago.\\\\
+\includegraphics[scale=1]{doc/iconos/AlmacenamientoPermanente.png}(ALMACENAMIENTO DEFINITIVO)\\\\
+1.	Pago a proveedores almacena en forma permanente el Comprobante de Contabilización original.\\
+2.	Administración almacena en forma permanente el Comprobante de Contabilización duplicado y el Legajo.\\\\
+\includegraphics[scale=1]{doc/iconos/Decision.png}(SÍMBOLOS DE DECISIÓN)\\\\
+1.	El Cheque corresponde a la compra y esta correctamente emitido?.\\
+2.	El Cheque corresponde a la compra y esta correctamente emitido?.\\
+3.	El Recibo esta correctamente emitido y conforme al pago?.\\
+\includegraphics[scale=1]{doc/iconos/CNR.png} (CIRCUITOS NO RELEVADOS)\\\\
+1.	Circuito no releevado de anulación/reemisión del Cheque.\\\\
+\includegraphics[scale=1]{doc/iconos/Operacion.png}(OPERACION)\\\\
+1.	Armado de Legajo.\\
+2.	Colocación de sello \texttt{"}Pagado\texttt{"} en el cheque.\\\\
+
+
+\newpage
+\subsection{Formularios}
+
+\subsubsection{Formulario - Cheque}
+\includegraphics[scale=0.6,angle=90]{doc/formularios/cheque.png}\\
+
+\newpage
+\subsubsection{Formulario - Manual del formulario Cheque}
+\begin{enumerate}
+\item{Tipo de cheque.}
+\item{Logo del banco que emite chequeras.}
+\item{Lugar de emisión del cheque. Completado por personal autorizado de Pago a Proveedores.}
+\item{Fecha de firma del cheque. Completado por personal autorizado de Pago a Proveedores.}
+\item{Fecha en que debe ser cobrado el cheque. Completado por personal autorizado de Pago a Proveedores.}
+\item{Número de serie del cheque. Completado por personal autorizado de Pago a Proveedores.}
+\item{Persona o entidad a la que debe pagarse el cheque. Completado por personal autorizado de Pago a Proveedores.}
+\item{Detalle del monto a pagar en letras. Completado por personal autorizado de Pago a Proveedores.}
+\item{Monto a pagar. Completado por personal autorizado de Pago a Proveedores.}
+\item{Lugar donde se libra el cheque.}
+\item{Serial que posee Número, cuenta bancaria y número de cheque.}
+\item{Número de cuenta bancaria.}
+\item{Lugar de la sucursal de cobro del cheque.}
+\item{Firma autorizada.}
+\end{enumerate}
+
+\newpage
+\begin{itemize}
+\item {\bf Sector emisor}: Pago a Proveedores.\\
+\item {\bf Objeto}: Ordena al banco el pago de la suma de dinero determinada en el documento a favor del proveedor especificado también en el documento, resultado de una compra.\\
+\item {\bf Nombre del documento}: Cheque (Cheque).\\
+\item {\bf Carácter del documento}: Externo.\\
+\item {\bf Número de ejemplares}: Original.\\
+\item {\bf Destinatarios}: Proveedor.\\
+\item {\bf Archivo}: dónde se almacena de forma definitiva el ejemplar.\\
+\end{itemize}
+
+\newpage
+\subsubsection{Formulario - Comprobante de Contabilización}
+\noindent \includegraphics[scale=0.4]{doc/formularios/CC.png}\\
+
+\newpage
+\subsubsection{Formulario - Manual del Formulario Comprobante de Contabilización}
+\indent 1. Logo de la empresa.\\
+\indent 2. Dirección de la empresa.\\
+\indent 3. Teléfono de la empresa.\\
+\indent 4. Ciudad/Código Postal de la empresa.\\
+\indent 5. País de la empresa.\\
+\indent 6. Fecha de inicio de actividades de la empresa.\\
+\indent 7. Número de orden de pago.\\
+\indent 8. Fecha de emisión del documento.\\
+\indent 9. CUIT de la empresa.\\
+\indent 10. Número de ingresos brutos de la empresa.\\
+\indent 11. Razón social del proveedor.\\
+\indent 12. Dirección del proveedor.\\
+\indent 13. Teléfono del proveedor.\\
+\indent 14. CUIT del proveedor.\\
+\indent 15. Observaciones sobre la forma de pago.\\
+\indent 16. Forma de pago, enuncia la cuenta del Banco u otros medios.\\
+\indent 17. Número de interno.\\
+\indent 18. Número de cheque, si es que la cuenta se hizo al contado.\\
+\indent 19. Fecha de Pago.\\
+\indent 20. Importe total del Pago.\\
+\indent 21. Importe en letras.\\
+\indent 22. Aplicación de la cuenta corriente.\\
+\indent 23. Código de la cuenta corriente.\\
+\indent 24. Número de cuotas a pagar de la deuda pendiente.\\
+\indent 25. Número de Comprobante original.\\
+\indent 26. Importe de cada una de las Boletas a pagar.\\
+\indent 27. Retenciones establecidas.\\
+\indent 28. Descuentos que son otorgados a la empresa.\\
+\indent 29. Importe a pagar Neto.\\
+\indent 30. Total a pagar.\\
+\indent 31. Si hubo retenciones, enumera los comprobantes de las mismas.\\
+\indent 32. Si hubo retenciones, tipo y código de las mismas.\\
+\indent 33. Firma del referente de emisión del pago, persona autorizada del área de \indent Cuentas a Pagar.\\
+\indent 34. Firma del gerente autorizante del área de Gerencia Administrativa.\\
+\indent 35. Sello del gerente autorizante del área de Gerencia Administrativa.\\
+\indent 36. Importe de la o las retenciones, si las hubo.\\
+
+\newpage
+\begin{itemize}
+\item {\bf Sector emisor}: Cuentas a pagar.\\
+\item {'bf Objeto}: Respaldar la emisión del pago que se realizará al proveedor. Mediante este documento se notifica a Cuentas a Pagar de la existencia y autorización del pago.\\\\
+\item {\bf Nombre del documento}: Comprobante de Contabilización (CC).\\
+\item {\bf Carácter del documento}: Interno a la empresa.\\
+\item {\bf Número de ejemplares}: Original y duplicado.\\
+\item {\bf Destinatarios}: Pago a Proveedores (CC0) y Cuentas a Pagar (CC1).\\
+\item {\bf Archivo}: dónde se almacena de forma definitiva un ejemplar.\\
+\end{itemize}
+
+\newpage
+\section{Producción}
+
+\subsection{Alcance}
+
+El circuito de producción inicia con el requerimiento de materia prima por parte de planificación y control de la producción (necesaria para cumplir con el plan maestro de producción y el programa de producción),y finaliza con la actualización del programa de producción con respecto a lo producido y conformado.
+
+\subsection{Procedimiento}
+
+Planificación y Control de la Producción(PCP): Desde el Circuito de Planificación, Circuito no relevado en el presente, PCP define el Plan Maestro de Producción y el Programa de Producción aprobados vigentes. El Plan Maestro de Producción y el Programa de Producción se basan en las demandas pronosticadas ó ciertas, en los recursos operativos y humanos disponibles,. Con estos documentos, emite el Listado de Requerimiento de Materia Prima (LRMP) por duplicado, indicando cantidades y fechas de necesidad de Materia Prima en la fábrica. Estos LRMP puede ser semestral, mensual ó quincenal. PCP, mediante el Proceso de aprobación interna dentro de la misma área de PCP según su propio procedimiento de autorizaciones, firma el LRMP y envía el original (LRMP0) a Almacén de Materia Prima. Guarda la copia de LRMP1 en forma temporal.\\
+
+Almacén de Materias Primas: Con el recibo del LRMP, el Almacén de Materia Prima revisa, en su Ficha de Stock Materia Prima (FSMP), si tiene stock disponible de los materiales solicitados por PCP. De tener existencia disponible, realiza el registro de la reserva de esos materiales y emite un Listado de Existencia original y copia, indicando en ese documento la existencias de Materia Prima en Almacén y su reserva. Envía el original del Listado de Existencias (LE) a PCP y guarda en forma transitoria la copia (LE1). Para el caso que el Almacén de Materia Prima no disponga de stock para reservar, también lo informa en el Listado de Existencia donde indica la fecha tentativa de ingreso de la MP desde el proveedor, en forma simultánea realizará una solicitud de compras según el Procedimiento del circuito de Compras. Circuito no relevado en este circuito de Producción.\\
+
+Planificación y Control de la Producción: Con el recibo del Listado de Existencia de la Materia Prima y la confirmación de la reserva de MP solicitada, emite la Orden de Producción original y tres copias, en la que indica a fábrica el producto que se debe fabricar, las cantidades por turno y máquina. Envía firmadas el original a Fábrica (OP0), la primera copia a Control de Calidad (OP1) y la segunda copia a Almacén de Producto Terminado (OP2). Guarda en forma temporaria la última copia (OP3).\\
+
+Fábrica: Con el recibo del original de la Orden de Producción, fábrica emite el Pedido de Materiales a Almacén de Materia Prima solicitando las Materias Primas ya reservada, indicando el documento que corresponde a ese Pedido. El Pedido se emite en original y tres copias, firma el documento y envía el original al Almacén de Materia Prima junto con copia 1 y 2 a efectos de que Almacén complete lo que envía en copia 1 y 2 y firma ambas.\\
+
+Almacén de Materia Prima: Con el recibo del Pedido de Materiales desde Fábrica, compara el Listado de Existencia que emitió con anterioridad con el Pedido de Materiales recibido. Si encuentra anomalías significativas lo devuelve para que Fabricación emita el PM nuevamente. Si concuerdan, agrega en la columna correspondiente del formulario de Pedido de Materiales, las cantidades de Materias Primas que efectivamente esté despachando, en las copias 1 y 2 y firma las mismas. Las copias 1 y 2 del Pedido de Materiales firmadas las envía a fábrica junto con el Material especificado en él. Luego archiva temporalmente el pedido de materiales original.\\
+
+Fábrica: Controla que los materiales recibidos coincidan con lo pedido y/o despachado. De no ser así, se devuelven al Almacén de Materia Prima. Si están en orden firma la copia PM1 a modo de confirmación de recibido y transferencia de la responsabilidad por el material y la devuelve al Almacén, quedando en guarda en fábrica la copia PM2 firmado por Almacén con el total de Materia Prima recibida.\\
+
+Almacén de Materia Prima: Registra la salida de materia prima en la FSMP y archiva todos los documentos con los que trabajó (pedido de materiales original, primera copia de pedidos de materiales firmada como confirmación de entregada, primera copia de listado de existencias y el original del listado de requerimientos de materia prima).\\
+
+Fábrica: Realiza el proceso de conversión de materia prima en un Producto determinado. Circuito no relevado que comprende operaciones físicas y de transformación y no administrativas.\\
+
+Fábrica: Emite el Parte de Producción (PP) original y cuatro copias y envía original a PCP (PP0) y la primera copia (PP1) a Control de Calidad.\\
+
+Control de Calidad: Retira de fábrica una muestra del Producto Terminado junto con el PP1 y analiza si la muestra cumple con las Especificaciones determinadas en las Especificaciones Técnicas y Normas de control de calidad estandarizadas extrapolándose este resultado a todo el lote producido.\\
+
+Control de Calidad: Emite una Nota de Rechazo original y dos copias en el caso de no cumplir con lo normado, guardándose la segunda copia (NR2) y enviando el original (NR0) a PCP y la primera copia (NR1)a Fabricación. Se archiva definitivamente la NR2,PP1 y la OP1\\
+
+Control de Calidad: Emite un Informe de Aceptación original y dos copias si se aprueban los estándares con los que fue fabricado el producto, enviando el original a PCP (IA0) y la primera copia (IA1) a Fabricación. Guarda IA2 en forma definitiva, junto con la OP1, y el PP1.\\
+
+Fábrica: Con el recibo del IA1 envía los productos finales junto con la segunda copia del Parte de Producción (PP2) a Almacén de Producto Terminado como asimismo la tercera copia (PP3) para su conformidad de recibo de Productos Terminados. De recibir la NR, comienza una serie de gestiones internas en Producción en función de Procedimientos estándares y manuales de autorizaciones, para el tratamiento de Producto NO CONFORME.\\
+
+Almacén de Producto Terminado: Recibe los productos elaborados, firma la copia PP3 y devuelve a Fábrica como constancia de recibo de los Productos y registra los cantidades recibidas en la Ficha de Stock de Productos Terminados. Archiva definitivamente OP2,IA1 y PP2.\\
+
+Fábrica: archiva definitivamente el PM4,PP2,PP3 conformado(en caso de que haya habido informe de aceptación),OP0,PM2 conformado,IA1 o NR1.\\
+
+Planificación y Control de la Producción: Actualiza el Programa de producción con la información recibida desde Fábrica y Control de Calidad con respecto a lo producido y conformado. Archiva definitivamente LRMP1,OP3,LE0,PP0,NR0 o IA0.
+
+
+\end{document}
+

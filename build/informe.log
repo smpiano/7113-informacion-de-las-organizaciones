@@ -1,0 +1,1177 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  7 NOV 2013 06:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**doc/informe.tex
+(./doc/informe.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
+ai, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2011/10/06 v5.0k Spanish support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen111
+)
+\es@datefmt=\count91
+\es@quottoks=\toks16
+\es@quotdepth=\count92
+Package babel Info: Making " an active character on input line 496.
+Package babel Info: Making . an active character on input line 599.
+Package babel Info: Making < an active character on input line 644.
+Package babel Info: Making > an active character on input line 644.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen112
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen113
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks20
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks21
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks22
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption2.sty
+Package: caption2 2011/08/12 v2.2d Customising captions (AR)
+
+
+Package caption2 Warning: ****************************************************
+(caption2)                THIS PACKAGE IS OBSOLETE:
+(caption2)                This package attempts to provide an `caption2'
+(caption2)                package v2.0/2.1 author environment so that OLD
+(caption2)                documents can be successfully processed. It should
+(caption2)                NOT be used for NEW documents! New documents should
+(caption2)                use the regular `caption' package v3.x instead.
+(caption2)                ****************************************************
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen121
+\captionmargin@=\dimen122
+\captionwidth=\dimen123
+\caption@indent=\dimen124
+\caption@parindent=\dimen125
+\caption@hangindent=\dimen126
+)
+Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
+e 210.
+\captionlinewidth=\dimen127
+\realcaptionwidth=\dimen128
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+(build/informe.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
+\openout1 = `informe.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=676.04005pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-43.6673pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=14.22636pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count106
+\scratchdimen=\dimen131
+\scratchbox=\box28
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen132
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks25
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<doc/imagenes/fiuba.jpg, id=1, 163.61125pt x 287.0725pt>
+File: doc/imagenes/fiuba.jpg Graphic file (type jpg)
+
+<use doc/imagenes/fiuba.jpg>
+Package pdftex.def Info: doc/imagenes/fiuba.jpg used on input line 116.
+(pdftex.def)             Requested size: 32.72166pt x 57.41347pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./doc/imagenes/fiuba.jpg>]
+ (build/informe.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write3
+\openout3 = `informe.toc'.
+
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 14.4521pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1]
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+LaTeX Info: Redefining \. on input line 189.
+LaTeX Info: Redefining \% on input line 189.
+[3] <doc/BarbieriCompras.png, id=24, 530.73282pt x 743.77875pt>
+File: doc/BarbieriCompras.png Graphic file (type png)
+
+<use doc/BarbieriCompras.png>
+Package pdftex.def Info: doc/BarbieriCompras.png used on input line 191.
+(pdftex.def)             Requested size: 451.12503pt x 632.21492pt.
+
+Overfull \hbox (49.87135pt too wide) in paragraph at lines 191--192
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+[4 <./doc/BarbieriCompras.png>]
+<doc/iconos/AlmTemp.png, id=28, 26.34843pt x 26.34843pt>
+File: doc/iconos/AlmTemp.png Graphic file (type png)
+
+<use doc/iconos/AlmTemp.png>
+Package pdftex.def Info: doc/iconos/AlmTemp.png used on input line 196.
+(pdftex.def)             Requested size: 26.34836pt x 26.34836pt.
+
+<doc/iconos/Registro.png, id=29, 25.59563pt x 25.59563pt>
+File: doc/iconos/Registro.png Graphic file (type png)
+
+<use doc/iconos/Registro.png>
+Package pdftex.def Info: doc/iconos/Registro.png used on input line 206.
+(pdftex.def)             Requested size: 25.59555pt x 25.59555pt.
+
+<doc/iconos/EmisionDocumento.png, id=30, 28.60687pt x 27.10126pt>
+File: doc/iconos/EmisionDocumento.png Graphic file (type png)
+
+<use doc/iconos/EmisionDocumento.png>
+Package pdftex.def Info: doc/iconos/EmisionDocumento.png used on input line 208
+.
+(pdftex.def)             Requested size: 28.6068pt x 27.10118pt.
+
+<doc/iconos/Firma.png, id=31, 26.34843pt x 24.84282pt>
+File: doc/iconos/Firma.png Graphic file (type png)
+
+<use doc/iconos/Firma.png>
+Package pdftex.def Info: doc/iconos/Firma.png used on input line 215.
+(pdftex.def)             Requested size: 26.34836pt x 24.84274pt.
+
+<doc/iconos/DistribucionDocumentos.png, id=32, 26.34843pt x 26.34843pt>
+File: doc/iconos/DistribucionDocumentos.png Graphic file (type png)
+
+<use doc/iconos/DistribucionDocumentos.png>
+Package pdftex.def Info: doc/iconos/DistribucionDocumentos.png used on input li
+ne 221.
+(pdftex.def)             Requested size: 26.34836pt x 26.34836pt.
+
+<doc/iconos/Formulario.png, id=33, 32.37094pt x 19.57312pt>
+File: doc/iconos/Formulario.png Graphic file (type png)
+
+<use doc/iconos/Formulario.png>
+Package pdftex.def Info: doc/iconos/Formulario.png used on input line 230.
+(pdftex.def)             Requested size: 32.37085pt x 19.57306pt.
+
+<doc/iconos/AlmacenamientoPermanente.png, id=34, 24.84282pt x 21.83156pt>
+File: doc/iconos/AlmacenamientoPermanente.png Graphic file (type png)
+
+<use doc/iconos/AlmacenamientoPermanente.png>
+Package pdftex.def Info: doc/iconos/AlmacenamientoPermanente.png used on input 
+line 237.
+(pdftex.def)             Requested size: 24.84274pt x 21.8315pt.
+
+<doc/iconos/OperacionControl.png, id=35, 27.10126pt x 25.59563pt>
+File: doc/iconos/OperacionControl.png Graphic file (type png)
+
+<use doc/iconos/OperacionControl.png>
+Package pdftex.def Info: doc/iconos/OperacionControl.png used on input line 241
+.
+(pdftex.def)             Requested size: 27.10118pt x 25.59555pt.
+
+<doc/iconos/Decision.png, id=36, 33.12375pt x 26.34843pt>
+File: doc/iconos/Decision.png Graphic file (type png)
+
+<use doc/iconos/Decision.png>
+Package pdftex.def Info: doc/iconos/Decision.png used on input line 247.
+(pdftex.def)             Requested size: 33.12366pt x 26.34836pt.
+
+<doc/iconos/CNR.png, id=37, 44.41594pt x 15.80907pt>
+File: doc/iconos/CNR.png Graphic file (type png)
+ <use doc/iconos/CNR.png>
+Package pdftex.def Info: doc/iconos/CNR.png used on input line 251.
+(pdftex.def)             Requested size: 44.41582pt x 15.809pt.
+
+<doc/iconos/Operacion.png, id=38, 28.60687pt x 27.10126pt>
+File: doc/iconos/Operacion.png Graphic file (type png)
+
+<use doc/iconos/Operacion.png>
+Package pdftex.def Info: doc/iconos/Operacion.png used on input line 254.
+(pdftex.def)             Requested size: 28.6068pt x 27.10118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--256
+
+ []
+
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+[5 <./doc/iconos/AlmTemp.png> <./doc/iconos/Registro.png> <./doc/iconos/Emision
+Documento.png> <./doc/iconos/Firma.png> <./doc/iconos/DistribucionDocumentos.pn
+g>]
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+ [6 <./doc/iconos/Formulario.png> <./doc/iconos/AlmacenamientoPermanente.png> <
+./doc/iconos/OperacionControl.png>]
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+ [7 <./doc/iconos/Decision.png> <./doc/iconos/CNR.png> <./doc/iconos/Operacion.
+png>]
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
+ [8]
+<doc/formularios/OrdenCompra.png, id=52, 472.76625pt x 316.18124pt>
+File: doc/formularios/OrdenCompra.png Graphic file (type png)
+
+<use doc/formularios/OrdenCompra.png>
+Package pdftex.def Info: doc/formularios/OrdenCompra.png used on input line 271
+.
+(pdftex.def)             Requested size: 668.65645pt x 426.82143pt.
+
+Overfull \hbox (25.56775pt too wide) in paragraph at lines 271--272
+[][] 
+ []
+
+
+Overfull \vbox (13.81741pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+
+[9 <./doc/formularios/OrdenCompra.png>]
+LaTeX Info: Redefining \. on input line 307.
+LaTeX Info: Redefining \% on input line 307.
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+LaTeX Info: Redefining \. on input line 318.
+LaTeX Info: Redefining \% on input line 318.
+[11] <doc/formularios/PedidoCotizacion.png, id=62, 472.76625pt x 361.35pt>
+File: doc/formularios/PedidoCotizacion.png Graphic file (type png)
+
+<use doc/formularios/PedidoCotizacion.png>
+Package pdftex.def Info: doc/formularios/PedidoCotizacion.png used on input lin
+e 320.
+(pdftex.def)             Requested size: 625.97946pt x 426.79733pt.
+
+Overfull \hbox (25.54366pt too wide) in paragraph at lines 320--321
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 322.
+LaTeX Info: Redefining \% on input line 322.
+[12 <./doc/formularios/PedidoCotizacion.png>]
+LaTeX Info: Redefining \. on input line 340.
+LaTeX Info: Redefining \% on input line 340.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+
+ []
+
+LaTeX Info: Redefining \. on input line 351.
+LaTeX Info: Redefining \% on input line 351.
+[14]
+LaTeX Info: Redefining \. on input line 354.
+LaTeX Info: Redefining \% on input line 354.
+ [15]
+LaTeX Info: Redefining \. on input line 358.
+LaTeX Info: Redefining \% on input line 358.
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+LaTeX Info: Redefining \. on input line 374.
+LaTeX Info: Redefining \% on input line 374.
+[17] <doc/BarbieriPagos.png, id=82, 391.4625pt x 733.99219pt>
+File: doc/BarbieriPagos.png Graphic file (type png)
+
+<use doc/BarbieriPagos.png>
+Package pdftex.def Info: doc/BarbieriPagos.png used on input line 376.
+(pdftex.def)             Requested size: 332.74469pt x 623.8963pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
+
+ []
+
+LaTeX Info: Redefining \. on input line 378.
+LaTeX Info: Redefining \% on input line 378.
+[18 <./doc/BarbieriPagos.png>]
+File: doc/iconos/AlmTemp.png Graphic file (type png)
+ <use doc/iconos/AlmTemp.png>
+Package pdftex.def Info: doc/iconos/AlmTemp.png used on input line 381.
+(pdftex.def)             Requested size: 26.34836pt x 26.34836pt.
+File: doc/iconos/Registro.png Graphic file (type png)
+
+<use doc/iconos/Registro.png>
+Package pdftex.def Info: doc/iconos/Registro.png used on input line 387.
+(pdftex.def)             Requested size: 25.59555pt x 25.59555pt.
+File: doc/iconos/EmisionDocumento.png Graphic file (type png)
+ <use doc/iconos/EmisionDocumento.png>
+Package pdftex.def Info: doc/iconos/EmisionDocumento.png used on input line 390
+.
+(pdftex.def)             Requested size: 28.6068pt x 27.10118pt.
+File: doc/iconos/Firma.png Graphic file (type png)
+
+<use doc/iconos/Firma.png>
+Package pdftex.def Info: doc/iconos/Firma.png used on input line 395.
+(pdftex.def)             Requested size: 26.34836pt x 24.84274pt.
+File: doc/iconos/DistribucionDocumentos.png Graphic file (type png)
+ <use doc/iconos/DistribucionDocumentos.png>
+Package pdftex.def Info: doc/iconos/DistribucionDocumentos.png used on input li
+ne 398.
+(pdftex.def)             Requested size: 26.34836pt x 26.34836pt.
+File: doc/iconos/Formulario.png Graphic file (type png)
+
+<use doc/iconos/Formulario.png>
+Package pdftex.def Info: doc/iconos/Formulario.png used on input line 406.
+(pdftex.def)             Requested size: 32.37085pt x 19.57306pt.
+File: doc/iconos/AlmacenamientoPermanente.png Graphic file (type png)
+ <use doc/iconos/AlmacenamientoPermanente.png>
+Package pdftex.def Info: doc/iconos/AlmacenamientoPermanente.png used on input 
+line 411.
+(pdftex.def)             Requested size: 24.84274pt x 21.8315pt.
+File: doc/iconos/Decision.png Graphic file (type png)
+
+<use doc/iconos/Decision.png>
+Package pdftex.def Info: doc/iconos/Decision.png used on input line 414.
+(pdftex.def)             Requested size: 33.12366pt x 26.34836pt.
+File: doc/iconos/CNR.png Graphic file (type png)
+ <use doc/iconos/CNR.png>
+Package pdftex.def Info: doc/iconos/CNR.png used on input line 418.
+(pdftex.def)             Requested size: 44.41582pt x 15.809pt.
+File: doc/iconos/Operacion.png Graphic file (type png)
+
+<use doc/iconos/Operacion.png>
+Package pdftex.def Info: doc/iconos/Operacion.png used on input line 420.
+(pdftex.def)             Requested size: 28.6068pt x 27.10118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--423
+
+ []
+
+LaTeX Info: Redefining \. on input line 423.
+LaTeX Info: Redefining \% on input line 423.
+[19]
+LaTeX Info: Redefining \. on input line 425.
+LaTeX Info: Redefining \% on input line 425.
+ [20] <doc/formularios/cheque.png, id=93, 1061.9675pt x 433.62pt>
+File: doc/formularios/cheque.png Graphic file (type png)
+
+<use doc/formularios/cheque.png>
+Package pdftex.def Info: doc/formularios/cheque.png used on input line 429.
+(pdftex.def)             Requested size: 637.18541pt x 260.17401pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+
+ []
+
+
+Overfull \vbox (3.01823pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 430.
+LaTeX Info: Redefining \% on input line 430.
+
+[21 <./doc/formularios/cheque.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 431.
+LaTeX Info: Redefining \% on input line 431.
+ [22]
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
+
+ []
+
+LaTeX Info: Redefining \. on input line 461.
+LaTeX Info: Redefining \% on input line 461.
+[24] <doc/formularios/CC.png, id=107, 1171.37625pt x 1606.0pt>
+File: doc/formularios/CC.png Graphic file (type png)
+
+<use doc/formularios/CC.png>
+Package pdftex.def Info: doc/formularios/CC.png used on input line 463.
+(pdftex.def)             Requested size: 468.5422pt x 642.38864pt.
+
+Overfull \hbox (50.28853pt too wide) in paragraph at lines 463--464
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Overfull \vbox (1.14961pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 465.
+LaTeX Info: Redefining \% on input line 465.
+
+[25 <./doc/formularios/CC.png (PNG copy)>]
+Overfull \hbox (3.4765pt too wide) in paragraph at lines 467--503
+[]\OT1/cmr/m/n/10.95 33. Fir-ma del re-fe-ren-te de emi-si^^Son del pa-go, per-
+so-na au-to-ri-za-da del ^^Sarea de []Cuentas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--503
+
+ []
+
+LaTeX Info: Redefining \. on input line 504.
+LaTeX Info: Redefining \% on input line 504.
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
+
+ []
+
+LaTeX Info: Redefining \. on input line 515.
+LaTeX Info: Redefining \% on input line 515.
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+LaTeX Info: Redefining \. on input line 533.
+LaTeX Info: Redefining \% on input line 533.
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+
+ []
+
+LaTeX Info: Redefining \. on input line 551.
+LaTeX Info: Redefining \% on input line 551.
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
+
+ []
+
+LaTeX Info: Redefining \. on input line 557.
+LaTeX Info: Redefining \% on input line 557.
+[30] (build/informe.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+) ) 
+Here is how much of TeX's memory you used:
+ 4182 strings out of 493485
+ 59875 string characters out of 3143526
+ 134300 words of memory out of 3000000
+ 7413 multiletter control sequences out of 15000+200000
+ 11327 words of font info for 41 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 37i,11n,43p,903b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb>
+Output written on build/informe.pdf (31 pages, 1784517 bytes).
+PDF statistics:
+ 154 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+
