@@ -67,6 +67,17 @@
 %\usepackage{threeparttable}
 
 
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{3}
+
+\newcommand{\manualItem}[2]{
+\noindent \begin{tabularx}{\textwidth}{|c|X|}
+\hline
+\includegraphics[scale=1]{#1} &(#2)\\
+\hline
+\end{tabularx}\\\\
+}
+
 %------------------------------ graphicx ----------------------------------
 %
 % Para incluir imágenes, el siguiente código carga el paquete graphicx 
@@ -131,9 +142,9 @@
 
 \begin{center}
   Juan Ignacio Albanesi,	\textit{P. XX.XXX},	\textit{jalbanesi@gmail.com}		\\
-  Facundo Aristegui,		\textit{P. XX.XXX},	\textit{faristegui@fi.uba.ar}		\\
+  Facundo Aristegui,		\textit{P. 90.646},	\textit{faristegui@fi.uba.ar}		\\
   Guido Di Paolo,		\textit{P. XX.XXX},	\textit{guido.dipaolo@gmail.com}	\\
-  Flavio Ferro,			\textit{P. XX.XXX},	\textit{flavio.ff.37@gmail.com}		\\
+  Flavio Ferro,			\textit{P. 87.187},	\textit{flavio.ff.37@gmail.com}		\\
   Damián Franetovich,		\textit{P. XX.XXX},	\textit{damian168@gmail.com}		\\
   karlo Ismael,			\textit{P. XX.XXX},	\textit{karlo.ismael@gmail.com}		\\
   Yair Emmanuel Lisa,		\textit{P. XX.XXX},	\textit{yairlisa@gmail.com}		\\
@@ -188,15 +199,15 @@ Un sector solicitante emite una Requisición de Compra por duplicado, indicando l
 \indent Pagos, verifica que la orden de compra firmada coincida con el remito firmado correspondiente, y luego da inicio al circuito de pagos no relevado.\\
 
 
+
 \newpage
 \subsection{Cursograma}
 \includegraphics[scale=0.85]{doc/BarbieriCompras.png}\\
 
 \newpage
 \subsection{Manual de Cursograma de Compras}
-
-\includegraphics[scale=1]{doc/iconos/AlmTemp.png}(ARCHIVO PROVISORIO)\\\\
-1. Se archiva temporalmente la requisición de compra.\\
+\manualItem{doc/iconos/AlmTemp.png}{ARCHIVO PROVISORIO}
+\noindent 1. Se archiva temporalmente la requisición de compra.\\
 2.	Ficha de Stock del almacén, tiene información sobre las existencias disponibles de materiales.\\
 3.	Se archiva temporalmente la Requisición de Compra, que tiene información sobre los materiales a comprar,  y el Pedido de cotización, que también tiene información sobre los elementos que se requiere comprar.\\
 4.	Archivo temporal del proveedor, contiene la información que el mismo posee sobre sus clientes.\\
@@ -205,22 +216,22 @@ Un sector solicitante emite una Requisición de Compra por duplicado, indicando l
 7.	Logística archiva temporalmente el duplicado de la orden de compra para cotejar con los materiales que le lleguen.\\
 8.	Ficha de Stock del almacén, tiene información sobre las existencias disponibles de materiales.\\
 9. Se archiva el duplicado de la orden de compra para controlar con el remito.\\\\
-\includegraphics[scale=1]{doc/iconos/Registro.png}(REGISTRO)\\\\
-1.	Registro de las cantidades de la compra en la Ficha de Stock\\\\
-\includegraphics[scale=1]{doc/iconos/EmisionDocumento.png}(EMISION DE DOCUMENTO)\\\\
-1.	Emisión de requisición de compra\\
+\manualItem{doc/iconos/Registro.png}{REGISTRO}
+\noindent 1.	Registro de las cantidades de la compra en la Ficha de Stock\\\\
+\manualItem{doc/iconos/EmisionDocumento.png}{EMISION DE DOCUMENTO}
+\noindent 1.	Emisión de requisición de compra\\
 2.	Se emite el Pedido de cotización.\\
 3.	Se emite la cotización del proveedor.\\
 4.	Se emite la orden de compra.\\
 5.	Emisión del remito.\\
 6.	Se emite el parte de recepción.\\\\
-\includegraphics[scale=1]{doc/iconos/Firma.png}(FIRMA DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/Firma.png}{FIRMA DE DOCUMENTO}
 1.	Se firma la requisición de compra\\
 2.	Se firma el Pedido de cotización.\\
 3.	Firma de la orden de compra.\\
 4.	Firma del remito.\\
 5.	Se firma el parte de recepción.\\\\
-\includegraphics[scale=1]{doc/iconos/DistribucionDocumentos.png}(ENVÍOS DE INFORMACIÓN)\\\\
+\manualItem{doc/iconos/DistribucionDocumentos.png}{ENVÍOS DE INFORMACIÓN}
 1.	Requisición de compra original, desde el sector solicitante hasta el sector de almacenes.\\
 2.	Pedido de cotización original, desde almacenes al proveedor.\\
 3.	Cotización original, del proveedor  a almacenes.\\
@@ -229,32 +240,66 @@ Un sector solicitante emite una Requisición de Compra por duplicado, indicando l
 6.	Remito original, de logística al proveedor \\
 7.	Parte de recepción original, desde logística al sector solicitante.\\
 8.	Remito original, desde logística a pagos.\\\\
-\includegraphics[scale=1]{doc/iconos/Formulario.png} (FORMULARIOS)\\\\
+\manualItem{doc/iconos/Formulario.png} {FORMULARIOS}
 1.	Requisición de compra, original y duplicado. Tiene información sobre los materiales que se requieren comprar.\\
 2.	Pedido de cotización, original y duplicado, tiene información sobre los materiales a comprar.\\
 3.	Cotización, original y duplicado, tiene información sobre precios de los materiales requeridos en el pedido de cotización.\\
 4.	Orden de compra, original, duplicado y triplicado. Notifica formalmente el deseo de realizar una compra al proveedor,  y tiene información sobre los materiales  a comprar, además de estar relacionada con el pedido de cotización anterior.\\
 5.	Remito, original y duplicado, Expresa cuales son los materiales que se están enviando junto con el mismo.\\
 6.	Parte de recepción, original y duplicado, indica cuáles fueron los materiales recibidos en condiciones.\\\\
-\includegraphics[scale=1]{doc/iconos/AlmacenamientoPermanente.png}(ALMACENAMIENTO DEFINITIVO)\\\\
+\manualItem{doc/iconos/AlmacenamientoPermanente.png}{ALMACENAMIENTO DEFINITIVO}
 1.	El almacén guarda  en forma definitiva el original de la requisición de compra y el duplicado del pedido de cotización, para futuras referencias.\\
 2.	Se archiva en forma definitiva en el área de logística el duplicado de la orden de compra, y el duplicado del parte de recepción.\\
 3.	El sector solicitante archiva en forma definitiva el duplicado de la requisición de compra y el original del parte de recepción.\\\\
-\includegraphics[scale=1]{doc/iconos/OperacionControl.png}(OPERACIÓN Y CONTROL)\\\\
+\manualItem{doc/iconos/OperacionControl.png}{OPERACIÓN Y CONTROL}
 1.	Se controla la requisición de compra con la ficha de stock para ver la necesidad de realizar una compra,\\
 2.	Se realiza un control utilizando el pedido de cotización y la cotización.\\
 3.	Se realiza un control utilizando el pedido de cotización, la cotización y la requisición de compra.\\
 4.	Se coteja la orden de compra con el remito para verificar materiales y cantidades.\\
 5.	Verificación entre el remito y la orden de compra. Da inicio al circuito de pagos.\\\\
-\includegraphics[scale=1]{doc/iconos/Decision.png}(SÍMBOLOS DE DECISIÓN)\\\\
+\manualItem{doc/iconos/Decision.png}{SÍMBOLOS DE DECISIÓN}
 1.	¿Coincide la cotización con lo requerido en el pedido de cotización?\\
 2.	¿Es conveniente realizar la compra en estas condiciones?\\
 3.	¿Se condicen los materiales recibidos con los especificados en la compra?\\\\
-\includegraphics[scale=1]{doc/iconos/CNR.png} (CIRCUITOS NO RELEVADOS)\\\\
+\manualItem{doc/iconos/CNR.png} {CIRCUITOS NO RELEVADOS}
 1.	Circuito no relevado de manejo de ventas por parte del proveedor.\\
 2.	Circuito no relevado de pago a proveedores.\\\\\
-\includegraphics[scale=1]{doc/iconos/Operacion.png}(OPERACION)\\\\
+\manualItem{doc/iconos/Operacion.png}{OPERACION}
 1.	Preparación de los materiales por parte del proveedor.\\
+
+\subsection{Normas de Control Interno}
+
+\begin{itemize}
+
+\item Separación de funciones.\\
+La función del sector de compra debe estar separada del manejo de los bienes (entrada, salida, almacenamiento) y de la parte contable de estos.\\\\
+
+	Se cumple en principio, ya que en el relevamiento no quedo del todo claro si Almacenes y Compras estaban separados totalmente. La recepción de los materiales es realizada por Logística y la contabilidad por el sector de Pagos\\\\
+
+\item Iniciación del trámite de compra.\\
+La operación de compra se inicia por un pedido formal del responsable del sector. Esta debe contar con un detalle especifico del material y propiedades que este debe cumplir, lo que facilitará la tarea del responsable de compra y para el control de calidad de los materiales recibidos. Lo cual no implica que se compre un material mejor al descrito.
+En caso de no poder cumplir con las especificaciones solicitadas, las modificaciones realizadas deben ser autorizadas por el responsable del bien.\\\\
+
+Se cumple mediante la emisión de una Requisición de Compra por parte del Sector Solicitante.\\\\
+
+\item Obtención de un número determinado de cotizaciones.\\
+En el momento de compras de montos altos,  se debe contar con, por lo menos, tres diferentes cotizaciones, para evitar conflictos con el responsable del sector. Este tipo de cotizaciones deben establecerse por escrito, las restantes pueden solicitarse por teléfono y en el caso de comprar menores, esta se puede realizar en forma directa.\\\\
+
+Se cumple en parte ya que, si bien se emiten Pedidos de Cotización, para algunos pedidos no existe más que un proveedor.\\\\
+
+\item Autorización de la compra.\\
+La decisión de compra debe realizarse de acuerdo a las ofertas recibidas, esta, está a cargo de un funcionario responsable, quien debe firmar la orden de compra o la cotización del proveedor.\\\\
+Se cumple ya que se analizan las Cotizaciones contra los Pedidos de Cotización enviados y la compra se autoriza por un funcionario responsable.\\\\
+
+\item Control de la mercadería recibida.\\
+Es importante el control de materiales recibidos, estos deben cumplir con las especificaciones y cantidades acordadas, el encargado debe realizar un detalle por escrito. En caso de tener que realizarse controles técnicos especiales, este sector suele estar dividido.\\\\
+En principio el control cuantitativo lo realiza Logística al recibir la mercadería. El relevamiento no arrojó la existencia de un área aparte de Control de Calidad para el control cualitativo, por lo que esta norma se cumple sólo en parte.\\\\
+
+\item Prenumeración de formularios.\\
+Los formularios que trascienden a terceros o avalan movimientos de bienes (solicitud de compras, órdenes de compra, informe de recepción y de control de calidad) deben tener numeración correlativa y en forma preimpresa. \\\\
+Los documentos mencionados se encuentran de forma prenumerada a través del sistema informático. No parece haber documentos que avalen el movimiento interno de materiales, por lo que sería algo a mejorar.
+
+\end{itemize}
 
 \newpage
 \subsection{Formularios}
@@ -380,24 +425,23 @@ Administración: Controla que el recibo emitido por el proveedor concuerde con lo
 \newpage
 \subsection{Manual de Cursograma de Pagos}
 
-\includegraphics[scale=1]{doc/iconos/AlmTemp.png}(ARCHIVO PROVISORIO)\\\\
+\manualItem{doc/iconos/AlmTemp.png}{ARCHIVO PROVISORIO}
 1.	El proveedor archiva temporalmente copia de la Factura.\\
 2.	Administración tiene archivados la orden de compra original y una copia del remito.\\
 3.	Administración retiene una copia del Comprobante de Contabilización.\\
-4.	\\
-5.	Pago a proveedores retiene el Legajo y el original del Comprobante de Contabilización.\\\\
-\includegraphics[scale=1]{doc/iconos/Registro.png}(REGISTRO)\\\\
+4.	Pago a proveedores retiene el Legajo y el original del Comprobante de Contabilización.\\\\
+\manualItem{doc/iconos/Registro.png}{REGISTRO}
 1.	Se Registra la factura a pagar en la ficha del proveedor.\\
 2.	Se Asienta la operación de pago en los libros contables.\\
-\includegraphics[scale=1]{doc/iconos/EmisionDocumento.png}(EMISION DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/EmisionDocumento.png}{EMISION DE DOCUMENTO}
 1.	Emisión de la Factura por parte del Proveedor\\
 2.	Emisión del Comprobante de Contabilización por parte de Administración\\
 3.	Emisión del Cheque por parte de Pago a Proveedores\\
 4.	Emisión del recibo por parte del Proveedor\\\\
-\includegraphics[scale=1]{doc/iconos/Firma.png}(FIRMA DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/Firma.png}{FIRMA DE DOCUMENTO}
 1.	Firma del Cheque\\
 2.	Segunda firma del Cheque\\\\
-\includegraphics[scale=1]{doc/iconos/DistribucionDocumentos.png}(ENVÍOS DE INFORMACIÓN)\\\\
+\manualItem{doc/iconos/DistribucionDocumentos.png}{ENVÍOS DE INFORMACIÓN}
 1.	El Proveedor envía la Factura original a Administración\\
 2.	Administración envía el Comprobante de Contabilización original y el Legajo a Pago a Proveedores\\
 3.	Pago a Proveedores envía el Legajo, el CC0 y el Cheque a Gerencia.\\
@@ -405,24 +449,69 @@ Administración: Controla que el recibo emitido por el proveedor concuerde con lo
 5.	Pago a Proveedores envía el Cheque al Proveedor.\\
 6.	El Proveedor envía el Recibo original a a Pago a Proveedores.\\
 7.	Pago a Proveedores envía el Legajo a Administración.\\\\
-\includegraphics[scale=1]{doc/iconos/Formulario.png} (FORMULARIOS)\\\\
+\manualItem{doc/iconos/Formulario.png} {FORMULARIOS}
 1.	Factura del Proveedor, contiene los detalles sobre los productos e importes a pagar.\\
 2.	Comprobante de Contabilización, confima el registro en la Ficha del Proveedor y habilita el pago al mismo.\\
 3.	Cheque\\
 4.	Recibo, confirmación por parte del Proveedor de la recepción del pago.\\\\
-\includegraphics[scale=1]{doc/iconos/AlmacenamientoPermanente.png}(ALMACENAMIENTO DEFINITIVO)\\\\
+\manualItem{doc/iconos/AlmacenamientoPermanente.png}{ALMACENAMIENTO DEFINITIVO}
 1.	Pago a proveedores almacena en forma permanente el Comprobante de Contabilización original.\\
 2.	Administración almacena en forma permanente el Comprobante de Contabilización duplicado y el Legajo.\\\\
-\includegraphics[scale=1]{doc/iconos/Decision.png}(SÍMBOLOS DE DECISIÓN)\\\\
+\manualItem{doc/iconos/Decision.png}{SÍMBOLOS DE DECISIÓN}
 1.	El Cheque corresponde a la compra y esta correctamente emitido?.\\
 2.	El Cheque corresponde a la compra y esta correctamente emitido?.\\
 3.	El Recibo esta correctamente emitido y conforme al pago?.\\
-\includegraphics[scale=1]{doc/iconos/CNR.png} (CIRCUITOS NO RELEVADOS)\\\\
+\manualItem{doc/iconos/CNR.png} {CIRCUITOS NO RELEVADOS}
 1.	Circuito no releevado de anulación/reemisión del Cheque.\\\\
-\includegraphics[scale=1]{doc/iconos/Operacion.png}(OPERACION)\\\\
+\manualItem{doc/iconos/Operacion.png}{OPERACION}
 1.	Armado de Legajo.\\
 2.	Colocación de sello \texttt{"}Pagado\texttt{"} en el cheque.\\\\
 
+\subsection{Normas de control Interno}
+\begin{itemize}
+\item Separación de funciones entre el manejo de fondos y el registro de las operaciones\\
+Esta norma pretende aislar a quienes tienen a su cargo el manejo de bienes (cajeros, cobradores, etc.) de registro de las operaciones. De esta manera quien maneja los fondos no debe tener acceso a cuentas corrientes, cunetas a pagar ni a contaduría.\\
+No se cumple correctamente, el sector encargado de los pagos (Pagos a Proveedores) es el que emite los cheques en lugar de Tesorería.\\
+\item Concentración de responsabilidades de la custodia de los fondos.\\
+Los valores monetarios en la empresa deberían  estar bajo el control de un solo responsable (tesorero).\\
+No se cumple correctamente, al no haber tesorería, no hay una única persona responsable por los fondos.\\
+\item Separación de los fondos provenientes de cobranzas con los destinados a pagos\\
+Los importes obtenidos de la cobranza deben ser depositados en forma íntegra en un banco. A su vez, los pagos deberían efectuarse mediante la emisión de cheques y no retirando dinero de la Cobranza antes que la misma sea depositada.\\
+Se cumple, al menos parcialmente en el area de Pagos que fue releevada.
+\item Rotación del personal que interviene en el manejo  de fondos\\
+Procura evitar que sea una misma persona la que permanentemente esté atendiendo determinada función; ya que es probable que si una operación es siempre realizada por la misma persona un error o un fraude pueda llegar a pasar
+Vinculado con la rotación se encuentra la necesidad de que el personal afectado al manejo de fondos tome sus vacaciones correspondientes.\\
+No se cumple. Hay rotaciones de personal pero no son programadas.
+\item Contabilización general de la operaciones relacionadas con los movimientos de fondos\\
+Debe existir un sistema capaz de registrar operaciones de dinero de manera que exista por cada operación un comprobante\\
+Se cumple, todas las operaciones se encuentran registradas y contabilizadas.
+\item Arqueos sorpresivos\\
+Consiste en el recuento de los valores que son mantenidos por el responsable de la custodia de fondos. Se hace con el fin de verificar la coincidencia entre la existencia de disponibilidades que tendría que haber, según surge de las registraciones contables y de los comprobantes  básicos y de la existencia de fondos que realmente hay.
+( comparar el dinero en existencia con los registros) \\
+Se cumple. Realizan arqueos a menudo, aunque no fue explicitado si los mismos son sorpresivos.
+\item Conciliación con el extracto bancario\\
+Conciliación entre las registraciones contables de la empresa y las que ha efectuado el banco. Estas últimas figuran en el extracto de cuneta que el banco envía a sus clientes. Tiene por propósito justificar las registraciones efectuadas por la empresa con respecto a los movimientos de fondos y a descubrir eventuales errores de imputación por parte del banco.\\
+Se cumple. Se realizan conciliaciones bancarias mensualmente.\\
+
+\item Realización de pagos por medios de cheques\\
+Implica que todo pago (exceptuando los de gastos menores) debe ser efectuado mediante el libramiento de un cheque. Permite que toda operación de pago deba pasar por un banco de esa manera quede registrada en la contabilidad del mismo. \\
+Se cumple, todos los pagos importantes a proveedores se hacen por medio de cheques.\\
+\item Forma de Emisión del cheque\\
+Dependiendo de la misma la circulación del mismo estará afectada por un mayor o menos riesgo\\
+Se cumple. Los cheques emitidos cumplen con estos requerimientos ya mencionados.\\
+\item Los Pagos debes estar respaldados por comprobantes básicos\\
+En el momento de firmarse el cheque debe exigirse la presentación de los comprobantes básicos que demuestren la necesidad de efectuar el pago\\
+Se cumple. Se tienen factura y recibo para respaldar los pagos.\\
+\item Necesidad del cheque con dos firmas\\
+Indica que los cheques deben ser firmados por lo menos por dos funcionarios de la empresa. Con ello se logra que exista un control reciproco entre ambos firmantes y se pueda descubrir errores en los pagos \\
+Se cumple, se firma en Pagos a Proveedores y en Gerencia.\\
+\item Control de los cheques anulados\\
+Los cheques que se anulan deben quedar adheridos a la chequera para facilitar el control\\
+\item Existencia de una caja chica
+Para aquellos pagos que por su importe o característica no puedan efectuarse en cheque, dada la necesidad que sean en efectivo, debe proveerse la existencia de una caja chica\\
+Se utiliza una caja chica para los gastos menores.\\
+
+\end{itemize}
 
 \newpage
 \subsection{Formularios}
@@ -555,11 +644,13 @@ Fábrica: archiva definitivamente el PM4,PP2,PP3 conformado(en caso de que haya h
 
 Planificación y Control de la Producción: Actualiza el Programa de producción con la información recibida desde Fábrica y Control de Calidad con respecto a lo producido y conformado. Archiva definitivamente LRMP1,OP3,LE0,PP0,NR0 o IA0.
 
-
+\newpage
 \subsection{Cursograma}
+\noindent \includegraphics[scale=0.4, angle=90]{doc/BarbieriProduccion.png}
+
 \newpage
 \subsection{Manual de Cursograma de Producción}
-\includegraphics[scale=1]{doc/iconos/AlmTemp.png}(ARCHIVO PROVISORIO)\\\\
+\manualItem{doc/iconos/AlmTemp.png}{ARCHIVO PROVISORIO}
 1.	Archivo provisorio de PMP y Plan maestro de Producción, con información fundamental para el seguimiento y planificación de la producción.\\
 2.	Se archiva provisoriamente la copia de la Lista de Requerimientos de Materias Primas, para dejar constancia de los materiales pedidos.\\
 3.	Archivo provisorio de la Ficha de Stock de Materias Primas, que tiene información sobre el stock disponible de materias primas.\\
@@ -574,12 +665,12 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 12.	Archivo provisorio de la Orden de Producción, para comparar con el Parte de Producción cuando llegue.\\
 13.	Archivo provisorio de Especificaciones Técnicas y de Notas de Control de Cálidad, los cuales son utilizados por Control de Cálidad ante cada pedido, para realizar su operatoria.\\
 14.	Archivo provisorio del triplicado de la Orden de Producción, para futura referencia.\\\\
-\includegraphics[scale=1]{doc/iconos/Registro.png}(REGISTRO)\\\\
+\manualItem{doc/iconos/Registro.png}{REGISTRO}
 1.	Registro en PMP y PmaP, de los resultados de la Producción.\\
 2.	Registro en la FSMP, de los materiales pedidos por Planificación y Control de la Producción.\\
 3.	Registro en la FSMP, de los materiales egresados.\\
 4.	Registro en la FSPT, de los materiales ingresados.\\\\
-\includegraphics[scale=1]{doc/iconos/EmisionDocumento.png}(EMISION DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/EmisionDocumento.png}{EMISION DE DOCUMENTO}
 1.	Emisión de LRMP por duplicado, de acuerdo a lo indicado en el PMaP.\\
 2.	Emisión de LE por duplicado, de acuerdo a los materiales pedidos en la LRMP recibida.\\
 3.	Emisión de OP, por cuadruplicado, en función de lo especificado en el PMaP.\\
@@ -587,7 +678,7 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 5.	Emisión de Parte de Producción por quintuplicado, en de acuerdo al resultado de la producción.\\
 6.	Emisión de Nota de Rechazo, en caso de que corresponda emitirla, de acuerdo a lo especificado por Control de Calidad.\\
 7.	Emisión de Informe de Aceptación, en caso de que corresponda emitirlo, de acuerdo a lo especificado por Control de Calidad.\\\\
-\includegraphics[scale=1]{doc/iconos/Firma.png}(FIRMA DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/Firma.png}{FIRMA DE DOCUMENTO}
 1.	Firma de LRMP(0,1), por personal responsable de Planificación y Control de la Producción.\\
 2.	Firma de LE(0,1), por responsable de otorgar los materiales requeridos.\\
 3.	Firma de OP(0,1,2,3), por Gerente o Responsable de la Planificación.\\
@@ -598,7 +689,7 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 8.	Firma de NR(0,1,2) por responsable de Control de Cálidad.\\
 9.	Firma de IA(0,1,2) por responsable de Control de Cálidad.\\
 10.	Firma de PP(2,3) por parte de Responsable de Almacén de Productos Terminados, para conformar por traslado de Materiales.\\\\
-\includegraphics[scale=1]{doc/iconos/DistribucionDocumentos.png}(ENVÍOS DE INFORMACIÓN)\\\\
+\manualItem{doc/iconos/DistribucionDocumentos.png}{ENVÍOS DE INFORMACIÓN}
 1.	Se Envía LRMP original firmado, de Planificación y Control de la Producción, a Almacén de Materias Primas.\\
 2.	Se Envía LE original firmado, de Almacen de Materias Primas a Planificación y Control de la Producción.\\
 3.	Se Envía OP, Original, duplicado y triplicado firmados, de Planificación y Control de la Producción, a Fábrica, Control de Calidad y Almacen de Producto Terminado, respectivamente.\\
@@ -609,7 +700,7 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 8.	Se Envía NR original y duplicado firmadas, de Control de Calidad a Planificación y Control de la Producción y a Fábrica, respectivamente.\\
 9.	Se Envía IA original y duplicado firmadas, de Control de Calidad a Planificación y Control de la Producción y a Fábrica, respectivamente.\\
 10.	Se Envía PP, triplicado y cuadruplicado, firmados por Fábrica y Almacén de Productos Terminados, desde Almacen de Productos Terminados hasta Fábrica.\\\\
-\includegraphics[scale=1]{doc/iconos/Formulario.png} (FORMULARIOS)\\\\
+\manualItem{doc/iconos/Formulario.png} {FORMULARIOS}
 1.	Lista de Requerimientos de Materias Primas(LRMP), se emite por duplicado, tiene información sobre requerimientos de Materiales.\\
 2.	Lista de Existencias (LE), se emite por duplicado, tiene información sobre disponibilidad de materiales.\\
 3.	Orden de Producción (OP), se emite por cuadruplicado, tiene información sobre la producción a iniciar.\\
@@ -617,35 +708,38 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 5.	Parte de Producción (PP), se emite por quintuplicado, tiene información sobre los resultados de la Producción iniciada por la OP.\\
 6.	Nota de Rechazo (NR), tiene información sobre el rechazo de productos terminados y su motivo.\\
 7.	Informe de Aceptación (IA), tiene información sobre la aceptación de los productos evaluados.\\\\
-\includegraphics[scale=1]{doc/iconos/AlmacenamientoPermanente.png}(ALMACENAMIENTO DEFINITIVO)\\\\
+\manualItem{doc/iconos/AlmacenamientoPermanente.png}{ALMACENAMIENTO DEFINITIVO}
 1.	LRMP1, OP3, LE0, PP0, NR0 ó IA0, en Planificación y Control de la Producción.\\
 2.	LE1, LRMP0, PM0, PM1, en Almacen de Materias Primas.\\
 3.	PM4, PP2, PP3, OP0, PM2, IA1, NR1, en Fábrica.\\
 4.	IA2 o NR2, OP1, PP1, en Control de Calidad.\\
 5.	OP2, IA1, PP2, en Almacen de Producto Terminado.\\\\
-\includegraphics[scale=1]{doc/iconos/OperacionControl.png}(OPERACIÓN Y CONTROL)\\\\
+\manualItem{doc/iconos/OperacionControl.png}{OPERACIÓN Y CONTROL}
 1.	Se controla la LRMP con la FSMP.\\
 2.	Se controla el PM con el LE.\\
 3.	Se controla PM con los materiales recibidos.\\
 4.	Se controla OP con PP y con materiales recibidos.\\\\
-\includegraphics[scale=1]{doc/iconos/Decision.png}(SÍMBOLOS DE DECISIÓN)\\\\
+\manualItem{doc/iconos/Decision.png}{SÍMBOLOS DE DECISIÓN}
 1.	Puede satisfacerse el requerimiento de materiales con el stock existente?.\\
 2.	Se corresponde el PM con el LE.\\
 3.	Se corresponden los materiales recibidos con el PM?.\\
 4.	Se recibio NR o IA?.\\
 5.	Estan los productos terminados aprobados por Control de Calidad?.\\\\
-\includegraphics[scale=1]{doc/iconos/CNR.png} (CIRCUITOS NO RELEVADOS)\\\\
+\manualItem{doc/iconos/CNR.png} {CIRCUITOS NO RELEVADOS}
 1.	Circuito de Planificación que permite obtener el PmaP y el PMP.\\
 2.	Circuito de Compras ante faltante de stock de materias primas.\\
 3.	Circuito de Planificación que permite actualizar el Pmap y el PMP.\\
 4.	Circuito de operativa de Producción.\\
 5.	Circuito de rechazo de Productos terminados, para destruirlos o reutilizarlos de alguna forma.\\\\
-\includegraphics[scale=1]{doc/iconos/Operacion.png}(OPERACION)\\\\
+\manualItem{doc/iconos/Operacion.png}{OPERACION}
 1.	Operación de Preparación de Materiales.\\\\
-\subsection{Formulario de Orden de Producción}
+
+\subsection{Formularios}
+
+\subsubsection{Formulario de Orden de Producción}
 \noindent \includegraphics[scale=0.37]{doc/formularios/OrdenProd.png}
 
-\subsection{Manual del formulario de Orden de Producción}
+\subsubsection{Manual del formulario de Orden de Producción}
 
 \begin{enumerate}
 \item Logo del emisor.
@@ -677,11 +771,22 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 \end{enumerate}
 
 \newpage
-\subsection{Formulario de Hoja de Ruta}
+\begin{itemize}
+\item {\bf Sector emisor}: Planificacion y Control de la Producción.\\
+\item {\bf Objeto}: Indicar y ordenar a distintos sectores sobre el comienzo de una producción.\\\\
+\item {\bf Nombre del documento}: Orden de Producción (OP).\\
+\item {\bf Carácter del documento}: Interno.\\
+\item {\bf Número de ejemplar}: Original y 3 (tres) copias.\\
+\item {\bf Destinatarios}: Planificación y Control de la Producción, Control de Calidad, Almacén de Producto Terminado, Fábrica.\\
+\item {\bf Archivo}: dónde se almacena en forma definitiva el ejemplar.\\
+\end{itemize}
+
+\newpage
+\subsubsection{Formulario de Hoja de Ruta}
 \includegraphics[scale=0.7]{doc/formularios/HojaRuta.png}
 
 \newpage
-\subsection{Manual del formulario de Hoja de Ruta}
+\subsubsection{Manual del formulario de Hoja de Ruta}
 \begin{enumerate}
 \item Logo del emisor.
 \item Código interno de la pieza.
@@ -705,6 +810,17 @@ Planificación y Control de la Producción: Actualiza el Programa de producción co
 \item Tiempo [segundos] standard de preparación de máquina.
 \item Tiempo [segundos/pieza] standard de elaboración de la pieza.
 \end{enumerate}
+
+\newpage
+\begin{itemize}
+\item {\bf Sector emisor}: Planificacion y Control de la Producción.\\
+\item {\bf Objeto}: Resumir todo el proceso de producción de los productos terminados\\\\
+\item {\bf Nombre del documento}: Hoja de Ruta (HR).\\
+\item {\bf Carácter del documento}: Interno.\\
+\item {\bf Número de ejemplar}: Original y al menos 1 (una) copia.\\
+\item {\bf Destinatarios}: Planificación y Control de la Producción, Fábrica.
+\item {\bf Archivo}: Planificación y Control de la Producción, Fábrica.\\
+\end{itemize}
 
 \section{Cobranzas}
 
@@ -731,7 +847,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 
 
 
-\includegraphics[scale=1]{doc/iconos/EmisionDocumento.png}(EMISION DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/EmisionDocumento.png}{EMISION DE DOCUMENTO}
 	Cliente\\
 	1. Emite Cheque (Cheque)\\
 	Cobrador\\
@@ -743,7 +859,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	5. Emite Minuta de Caja original  y copia (MC)\\
 	Contaduría (Cuentas corrientes)\\
 	6. Emite Listado de cuentas deudoras, original y copia (LCD)\\\\
-\includegraphics[scale=1]{doc/iconos/AlmTemp.png}(ARCHIVO PROVISORIO)\\\\
+\manualItem{doc/iconos/AlmTemp.png}{ARCHIVO PROVISORIO}
 	Cliente\\
 	1. Archiva Facturas (F0), Notas de Débito (ND0), Notas de Crédito (NC0) originales y Ficha de Cuentas Corrientes (FCC) \\
 	Cobrador\\
@@ -757,7 +873,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	6,8. Archiva Ficha de Cuentas Corrientes\\
 	7. Archiva copia firmada del Listado de Cuentas Deudoras (LCD1firm y primera copia conformada de Factura (F1conf)\\
 	9. Archiva Libros Contables\\\\
-\includegraphics[scale=1]{doc/iconos/Formulario.png} (FORMULARIOS)\\\\
+\manualItem{doc/iconos/Formulario.png} {FORMULARIOS}
 	Cliente\\
 	1. Cheque\\
 	Cobrador\\
@@ -770,7 +886,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	5. Minuta de Caja original  y dos copias (MC0,1,2)\\
 	Contaduría (Cuentas Corrientes)\\
 	6.Listado de Cuentas Deudoras original y copia  (LCD0,1)\\\\
-\includegraphics[scale=1]{doc/iconos/Firma.png}(FIRMA DE DOCUMENTO)\\\\
+\manualItem{doc/iconos/Firma.png}{FIRMA DE DOCUMENTO}
 	Cliente\\
 	1. Firma Cheque\\
 	Cobrador\\
@@ -782,7 +898,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	Tesorería\\
 	6. Firma Listado de Cobranzas original (LC0f)\\
 	7. Firma Minuta de Caja original y copia (MC0,1)\\\\
-\includegraphics[scale=1]{doc/iconos/DistribucionDocumentos.png}(ENVÍOS DE INFORMACIÓN)\\\\
+\manualItem{doc/iconos/DistribucionDocumentos.png}{ENVÍOS DE INFORMACIÓN}
 	Cliente\\
 	1. Distribuye Cheque a Cobrador\\
 	Cobrador\\
@@ -801,7 +917,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	11. Distribuye Listado de Cuentas Deudoras original y copia, copia de Factura, Notas de Crédito y Notas de Débito a Créditos y Cobranzas (LC0, F3, ND1, NC1)\\
 	Cuentas corrientes\\
 	2. Archiva ficha de stock ,copia del Listado de cuentas deudoras  y copia de minuta de caja ( FCC, LCD1 ,MC1 )\\\\
-\includegraphics[scale=1]{doc/iconos/AlmacenamientoPermanente.png}(ALMACENAMIENTO DEFINITIVO)\\\\
+\manualItem{doc/iconos/AlmacenamientoPermanente.png}{ALMACENAMIENTO DEFINITIVO}
 	Cliente\\
 	1. Archiva Factura, Recibo, Notas de Crédito y Notas de Débito originales y Ficha de Cuentas Corrientes (F0, R0, NC0, ND0, FCC)\\
 	Cobrador\\
@@ -813,7 +929,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	Contaduría\\
 	5. Archiva tercera copia de Factura, primera copia de Factura conformada, copia de Nota de Débito, copia de Nota de Crédito y tercera copia del Recibo (F3, F1conf, ND1, NC1, R3)\\
 	6. Archiva original de la Minuta de Caja (MC0)\\\\
-\includegraphics[scale=1]{doc/iconos/Registro.png}(REGISTRO)\\\\
+\manualItem{doc/iconos/Registro.png}{REGISTRO}
 	Cobrador\\
 	1. Registra pago del Cliente\\
 	Tesorería\\
@@ -821,10 +937,10 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	Contaduría\\
 	3. Registra cobranza en Ficha de Cuenta Corriente( FCC)\\
 	4 Registra cobranza en Libros Contables\\\\
-\includegraphics[scale=1]{doc/iconos/Operacion.png}(OPERACION)\\\\
+\manualItem{doc/iconos/Operacion.png}{OPERACION}
 	Cobrador\\
 	1. Realiza el cobro enviando al cliente una copia de la Factura\\\\
-\includegraphics[scale=1]{doc/iconos/Decision.png}(SÍMBOLOS DE DECISIÓN)\\\\
+\manualItem{doc/iconos/Decision.png}{SÍMBOLOS DE DECISIÓN}
 	Cliente\\
 	1. Acepta o  no la documentación entregada por el Cobrador, en caso de rechazarla se la regresa\\
 	Cobrador\\
@@ -837,7 +953,7 @@ Finalmente Contaduría registra el pago del Cliente en la Ficha de Cuentas Corrie
 	6. Acepta o no el Listado de Cobranzas original que le da el Cobrador
 	Contaduría\\
 	7. Acepta o no los documentos enviados por Créditos y Cobranzas. En caso de rechazo se ingresa a un Circuito No Relevado\\\\
-\includegraphics[scale=1]{doc/iconos/OperacionControl.png}(OPERACIÓN Y CONTROL)\\\\
+\manualItem{doc/iconos/OperacionControl.png}{OPERACIÓN Y CONTROL}
 	Cliente\\
 	1. Controla la tercera copia de Factura que le entrega el cobrador junto a Notas de Crédito y Débito (F3, NC1, ND1)\\
 	Cobrador\\
@@ -857,12 +973,13 @@ Destrucción\\
 	Créditos y Cobranzas\\
 	2. Destruye el Listado de Cuentas Deudoras firmado por el (LCD1firm)\\
 
-\subsection{Formulario de Recibo}
+\subsection{Formularios}
+\subsubsection{Formulario de Recibo}
 
 \includegraphics[scale=0.45]{doc/formularios/Recibo.png}
 
 \newpage
-\subsection{Manual del formulario de Recibo}
+\subsubsection{Manual del formulario de Recibo}
 \noindent 1: Logo del emisor.\\
 2: Datos del emisor.\\
 3: Número de formulario.\\
@@ -891,11 +1008,23 @@ Destrucción\\
 26: Aclaración de firma del destinatario.\\
 27: Datos de la imprenta.\\
 28: Número de copia del formulario.\\
+
 \newpage
-\subsection{Formulario de Listado de Cobranzas}
+\begin{itemize}
+\item {\bf Sector emisor}: Cobrador.\\
+\item {\bf Objeto}: Asentar el recibimiento de un pago.\\\\
+\item {\bf Nombre del documento}: Recibo (R).\\
+\item {\bf Carácter del documento}: Externo.\\
+\item {\bf Número de ejemplar}: Original y 3 (tres) copias.\\
+\item {\bf Destinatarios}: Cliente, Tesorería, Créditos y Cobranzas.
+\item {\bf Archivo}: Tesorería, Contaduría.\\
+\end{itemize}
+
+\newpage
+\subsubsection{Formulario de Listado de Cobranzas}
 \includegraphics[scale=0.8]{doc/Formularios/ListadoCob.png}
 \newpage
-\subsection{Manual del formulario de Cobranzas}
+\subsubsection{Manual del formulario de Cobranzas}
 \noindent 1: Logo del emisor.\\
 2: Datos del emisor.\\
 3: Fecha de emisión del formulario.\\
@@ -911,10 +1040,175 @@ Destrucción\\
 13: Total de las facturas a cobrar.\\
 14: Total cobrado.\\
 
+\newpage
+\begin{itemize}
+\item {\bf Sector emisor}: Créditos y Cobranzas.\\
+\item {\bf Objeto}: Indicar al cobrador las cobranzas que debe realizar, y controlarlas luego.\\\\
+\item {\bf Nombre del documento}: Listado de Cobranzas (LC).\\
+\item {\bf Carácter del documento}: Interno.\\
+\item {\bf Número de ejemplar}: Original y 1 (una) copia.\\
+\item {\bf Destinatarios}: Cobrador, Tesorería.
+\item {\bf Archivo}: Se elimina.\\
+\end{itemize}
+
 \section{Ventas(Circuito Relevado)}
+
 \subsection{Alcance}
+El circuito abarca desde la Solicitud de Cotización por parte del Cliente, hasta la entrega de mercadería, facturación y registro de la venta.\\
 \subsection{Procedimiento}
+El Cliente emite una Solicitud de Cotización (SC) como resultado de su procedimiento de compras.\\
+Ventas recibe la Solicitud de Cotización y realiza una operatoria de comprobación de disponibilidad de stock utilizando la Ficha de Stock (FS).\\
+Luego utiliza la FS y la Lista de Precios LP para confeccionar una Cotización. Emite la misma por duplicado, y envía el original a Créditos y Cobranzas, archivando provisoriamente el duplicado.\\\\
+Créditos y Cobranzas analiza la Cuenta Corriente del Cliente, utilizando la Ficha de Cuentas Corrientes FCC y el Listado de Operaciones del Cliente LOC, para determinar si se le permite obtener crédito para la compra. Se firma la Cotización con la aceptación o el rechazo, y se la devuelve a Ventas.\\\\
+En caso de resultar rechazada, Ventas archiva en forma definitiva la Cotización original y copia, y se ingresa a un Circuito No Relevado de Ventas Rechazadas. Si la Cotización es aceptada, y el monto de la misma es mayor que el máximo para compras menores se envía al Gerente de Ventas para autorización. Si el monto de la Cotización es menor, se la envía directamente al Cliente.\\\\
+El Gerente de Ventas analiza la Cotización y la firma, aprobándola o rechazándola. Si resulta rechazada, se la archiva en forma definitiva junto con el duplicado. Si es aceptada, se la devuelve a Ventas que se la reenvía al Cliente.\\\\
+El Cliente recibe la Cotización, y continúa su Circuito de Compras (CNR). En caso de querer continuar con la compra, emite una Orden de Compra (OC) y la envía a la empresa.
+Ventas recibe la OC y emite una Nota de Pedido NP por triplicado, envía una copia a Facturación, el original a Almacén y la última copia a Créditos y Cobranzas que registra el pedido en la Ficha de Cuentas Corrientes y archiva definitivamente la copia de la Nota de Pedido.\\\\
+Almacén recibe la NP, y prepara el pedido. El responsable de Almacén emite Remito por triplicado, los firma, y envía original y copia junto con el pedido al cliente. Registra la salida de mercadería en la Ficha de Stock y archiva la segunda copia del Remito junto con la Nota de Pedido original.\\
+El Cliente, al recibir la mercadería, realiza un control comparando con el Remito y la OC.\\\\
+Puede decidir rechazar la mercadería por alguna discrepancia con el pedido, en cuyo caso dará lugar a un Circuito no Relevado de Compras Rechazadas. Si acepta la mercadería debe firmar los Remitos. El Remito duplicado es entregado al personal de transporte para devolverlo a la empresa.\\\\
+Contaduría y Facturación recibe el Remito firmado por el cliente y procede a emitir la Factura por triplicado, utilizando información del Remito conformado y la copia de la NP. Envía el original y la copia restante al Cliente.
+El Cliente firma la copia de la Factura y la devuelve a la empresa, y da inicio a su circuito de Pagos (CNR).\\
+Contaduría y Facturación recibe la copia de la Factura firmada y registra en la FCC. Luego  archiva en forma definitiva la otra copia de la Factura, junto con la NP y el Remito.\\
+
+
 \subsection{Cursograma}
+\includegraphics[scale=0.8]{doc/BarbieriVentas.png}
 \subsection{Manual de Cursograma de Ventas}
+
+\manualItem{doc/iconos/EmisionDocumento.png}{EMISION DE DOCUMENTO}
+Ventas\\
+1. Emite Cotización (COT)\\
+2. Emite Nota de Pedido (NP)\\
+Almacén\\
+3. Emite Remito (RTO)\\
+Contaduría y Facturación\\
+4. Emite Factura (F)\\
+
+\manualItem{doc/iconos/AlmTemp.png}{ARCHIVO PROVISORIO}
+Cliente\\
+1. Archiva Orden de Compra (OC) \\
+Ventas\\
+2. Archiva Ficha de Stock (FS) y Listado de Precios (LP)\\
+3. Archiva copia de Cotización (COT1)\\
+Créditos y Cobranzas\\
+4. Archiva Ficha de Cuentas Corrientes (FCC) y Listado de Operaciones del Cliente (LOC)\\
+5. Archiva Ficha de Cuentas Corrientes (FCC)\\
+Almacén\\
+6. Archiva Ficha de Stock (FS)\\
+Contaduría y Facturación\\
+7. Archiva copia de Nota de Pedido (NP1)\\
+8. Archiva Ficha de Cuentas Corrientes\\
+
+\manualItem{doc/iconos/Formulario.png} {FORMULARIOS}
+Cliente\\
+1. Solicitud de Cotización (SC)\\
+2. Orden de Compra (OC)\\
+Ventas\\
+3. Cotización original y copia (COT0,1)\\
+4. Nota de Pedido original y dos copias (NP0,1,2)\\
+Almacén\\
+5. Remito original y dos copias (RTO0,1,2)\\
+Contaduría y Facturación\\
+6. Factura y dos copias (F0,1,2)\\
+
+\manualItem{doc/iconos/Firma.png}{FIRMA DE DOCUMENTO}
+Cliente\\
+1. Firma copia de Remito (RTO1)\\
+2. Firma copia de Factura (F1)\\
+Ventas\\
+3. Firma Cotización (COT)\\
+4. Firma Nota de Pedido (NP)\\
+Créditos y Cobranzas\\
+5. Firma Cotización (COT)\\
+Gerente de Ventas\\
+6. Firma Cotización (COT)\\
+Almacén\\
+7. Firma Remito (RTO)\\
+
+\manualItem{doc/iconos/DistribucionDocumentos.png}{ENVÍOS DE INFORMACIÓN}
+Cliente
+1. Distribuye Remito firmado a Contaduría y Facturación\\
+2. Distribuye Factura firmada a Contaduría y Facturación\\
+Ventas\\
+3. Distribuye Cotización a Créditos y Cobranzas\\
+4. Distribuye Nota de Pedido original a Almacén, primera copia a Contaduría y Facturación y segunda copia a Créditos y Cobranzas\\
+Créditos y Cobranzas\\
+5. Distribuye Cotización a Ventas\\
+Almacén\\
+6. Distribuye Remito original y copia junto a mercaderías a Cliente\\
+Contaduría y Facturación\\
+7. Distribuye Factura original y primera copia a Cliente\\
+
+\manualItem{doc/iconos/AlmacenamientoPermanente.png}{ALMACENAMIENTO DEFINITIVO}
+Ventas\\
+1. Archiva original y copia de Cotización\\
+2. Archiva Orden de Compra\\
+Créditos y Cobranzas\\
+3. Archiva segunda copia de Nota de Pedido (NP2)\\
+Almacén\\
+4. Archiva segunda copia de Remito (RTO2) y original de Nota de Pedido (NP0)\\
+Contaduría y Facturación\\
+5. Archiva copia de Nota de Pedido (NP1), copia Remito confirmado (RTO1 conf), segunda copia de Factura (F2) y primera copia de Factura firmada (F1firm)\\
+
+\manualItem{doc/iconos/Registro.png}{REGISTRO}
+Créditos y Cobranzas\\
+1. Registra Nota de Pedido en Ficha de Cuentas Corrientes (FCC)\\
+Almacén\\
+2. Registra salida de mercaderías en Ficha de Stock (FS)\\
+Contaduría y Facturación\\
+3. Registra Factura en Ficha de Cuentas Corrientes (FCC)\\
+
+\manualItem{doc/iconos/Operacion.png}{OPERACION}
+	Ventas\\
+	1. Realiza el análisis de cotización basado en la Solicitud de Cotización (SC), la Lista de Precios (LP) y la Ficha de Stock (FS)\\
+	Créditos y Cobranzas\\
+	2. Analiza la Cotización basándose en la Ficha de Cuentas Corrientes (FCC) y el Listado de Operaciones del Cliente (LOC)\\
+	Almacén\\
+	2. Prepara el pedido en base a la Nota de Pedido (NP)\\
+
+\manualItem{doc/iconos/Decision.png}{SÍMBOLOS DE DECISIÓN}
+Cliente\\
+1. Acepta o no la mercadería recibida \\
+Ventas\\
+2. Acepta o no la Cotización enviada por Créditos y Cobranzas\\
+3. Acepta o no la Cotización directamente basada en el importe\\
+Gerente de Ventas\\
+4. Acepta o no el la Cotización enviada por Ventas\\
+
+\manualItem{doc/iconos/OperacionControl.png}{OPERACIÓN Y CONTROL}
+	Cliente\\
+	1. Controla la mercadería recibida\\
+	Ventas\\
+	2. Controla la Cotización enviada por Créditos y Cobranzas\\
+	3. Controla la Cotización basada en el importe\\
+	Gerente de Ventas\\	
+	4. Controla la Cotización basada en el importe\\
+
+Destrucción\\
+
+\subsection{Normas de Control Interno}
+\begin{itemize}
+
+\item Separación de funciones y Aprobación de ventas
+Esta norma se cumple ya que la decisión de incrementar el crédito de un Cliente se encuentra en un área específica (Créditos y Cobranzas). La Gerencia de Ventas sólo autoriza ventas de determinado monto en adelante. Ventas está separada de facturación y no tiene acceso a la modificación de los registros de stock y cuenta de clientes. 
+
+\item Bonificaciones
+Se cumple de acuerdo a política consensuada por las distintas Gerencias.
+
+\item Movimientos de bienes
+Esta norma se cumple, para la entrega de productos se emite Remito y Factura con sus respectivas copias. De esta manera, tanto el cliente como la empresa tienen una constancia de entrega y recepción de productos.
+
+\item Documentación
+Las facturas son numeradas por la controladora fiscal y los Remitos son prenumerados por la imprenta. Se cumple.
+
+\item Control de facturación
+Se conforma Remito y se actualiza ficha de stock, luego se envía la Factura.	
+Se cumple esta Norma.
+
+\end{itemize}
+
+\subsection{Formularios}
+
 \end{document}
 
