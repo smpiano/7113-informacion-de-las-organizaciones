@@ -10,7 +10,7 @@ build/informe.pdf: build
 
 clean:
 	rm -rf build
-	rm -f informe.pdf
+	rm -f Trabajo\ de\ campo.pdf
 
 doc-preview: doc
 	cp build/informe.pdf Trabajo\ de\ campo.pdf
