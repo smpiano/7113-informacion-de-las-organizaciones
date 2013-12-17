@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  17 DEC 2013 14:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  17 DEC 2013 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -368,12 +368,8 @@ Package pdftex.def Info: doc/imagenes/fiuba.jpg used on input line 128.
  (build/informe.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write3
-\openout3 = `informe.toc'.
-
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -381,10 +377,16 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1]
+[1])
+\tf@toc=\write3
+\openout3 = `informe.toc'.
+
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
+ [2]
 LaTeX Info: Redefining \. on input line 182.
 LaTeX Info: Redefining \% on input line 182.
- [2]
+ [3]
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
@@ -416,7 +418,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
-[3] <doc/BarbieriCompras.png, id=24, 530.73282pt x 743.77875pt>
+[4] <doc/BarbieriCompras.png, id=27, 530.73282pt x 743.77875pt>
 File: doc/BarbieriCompras.png Graphic file (type png)
 
 <use doc/BarbieriCompras.png>
@@ -429,8 +431,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
 LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
-[4 <./doc/BarbieriCompras.png>]
-<doc/iconos/AlmTemp.png, id=28, 26.34843pt x 26.34843pt>
+[5 <./doc/BarbieriCompras.png>]
+<doc/iconos/AlmTemp.png, id=31, 26.34843pt x 26.34843pt>
 <use doc/iconos/AlmTemp.png> <use doc/iconos/AlmTemp.png>
 File: doc/iconos/AlmTemp.png Graphic file (type png)
 
@@ -438,7 +440,7 @@ File: doc/iconos/AlmTemp.png Graphic file (type png)
 Package pdftex.def Info: doc/iconos/AlmTemp.png used on input line 209.
 (pdftex.def)             Requested size: 26.34836pt x 26.34836pt.
 
-<doc/iconos/Registro.png, id=29, 25.59563pt x 25.59563pt>
+<doc/iconos/Registro.png, id=32, 25.59563pt x 25.59563pt>
 <use doc/iconos/Registro.png> <use doc/iconos/Registro.png>
 File: doc/iconos/Registro.png Graphic file (type png)
 
@@ -446,7 +448,7 @@ File: doc/iconos/Registro.png Graphic file (type png)
 Package pdftex.def Info: doc/iconos/Registro.png used on input line 219.
 (pdftex.def)             Requested size: 25.59555pt x 25.59555pt.
 
-<doc/iconos/EmisionDocumento.png, id=30, 28.60687pt x 27.10126pt>
+<doc/iconos/EmisionDocumento.png, id=33, 28.60687pt x 27.10126pt>
 <use doc/iconos/EmisionDocumento.png> <use doc/iconos/EmisionDocumento.png>
 File: doc/iconos/EmisionDocumento.png Graphic file (type png)
 
@@ -455,7 +457,7 @@ Package pdftex.def Info: doc/iconos/EmisionDocumento.png used on input line 221
 .
 (pdftex.def)             Requested size: 28.6068pt x 27.10118pt.
 
-<doc/iconos/Firma.png, id=31, 26.34843pt x 24.84282pt>
+<doc/iconos/Firma.png, id=34, 26.34843pt x 24.84282pt>
 <use doc/iconos/Firma.png> <use doc/iconos/Firma.png>
 File: doc/iconos/Firma.png Graphic file (type png)
 
@@ -463,7 +465,7 @@ File: doc/iconos/Firma.png Graphic file (type png)
 Package pdftex.def Info: doc/iconos/Firma.png used on input line 228.
 (pdftex.def)             Requested size: 26.34836pt x 24.84274pt.
 
-<doc/iconos/DistribucionDocumentos.png, id=32, 26.34843pt x 26.34843pt>
+<doc/iconos/DistribucionDocumentos.png, id=35, 26.34843pt x 26.34843pt>
 <use doc/iconos/DistribucionDocumentos.png>
 <use doc/iconos/DistribucionDocumentos.png>
 File: doc/iconos/DistribucionDocumentos.png Graphic file (type png)
@@ -473,7 +475,7 @@ Package pdftex.def Info: doc/iconos/DistribucionDocumentos.png used on input li
 ne 234.
 (pdftex.def)             Requested size: 26.34836pt x 26.34836pt.
 
-<doc/iconos/Formulario.png, id=33, 32.37094pt x 19.57312pt>
+<doc/iconos/Formulario.png, id=36, 32.37094pt x 19.57312pt>
 <use doc/iconos/Formulario.png> <use doc/iconos/Formulario.png>
 File: doc/iconos/Formulario.png Graphic file (type png)
 
@@ -481,7 +483,7 @@ File: doc/iconos/Formulario.png Graphic file (type png)
 Package pdftex.def Info: doc/iconos/Formulario.png used on input line 243.
 (pdftex.def)             Requested size: 32.37085pt x 19.57306pt.
 
-<doc/iconos/AlmacenamientoPermanente.png, id=34, 24.84282pt x 21.83156pt>
+<doc/iconos/AlmacenamientoPermanente.png, id=37, 24.84282pt x 21.83156pt>
 <use doc/iconos/AlmacenamientoPermanente.png>
 <use doc/iconos/AlmacenamientoPermanente.png>
 File: doc/iconos/AlmacenamientoPermanente.png Graphic file (type png)
@@ -491,7 +493,7 @@ Package pdftex.def Info: doc/iconos/AlmacenamientoPermanente.png used on input
 line 250.
 (pdftex.def)             Requested size: 24.84274pt x 21.8315pt.
 
-<doc/iconos/OperacionControl.png, id=35, 27.10126pt x 25.59563pt>
+<doc/iconos/OperacionControl.png, id=38, 27.10126pt x 25.59563pt>
 <use doc/iconos/OperacionControl.png> <use doc/iconos/OperacionControl.png>
 File: doc/iconos/OperacionControl.png Graphic file (type png)
 
@@ -500,7 +502,7 @@ Package pdftex.def Info: doc/iconos/OperacionControl.png used on input line 254
 .
 (pdftex.def)             Requested size: 27.10118pt x 25.59555pt.
 
-<doc/iconos/Decision.png, id=36, 33.12375pt x 26.34843pt>
+<doc/iconos/Decision.png, id=39, 33.12375pt x 26.34843pt>
 <use doc/iconos/Decision.png> <use doc/iconos/Decision.png>
 File: doc/iconos/Decision.png Graphic file (type png)
 
@@ -508,14 +510,14 @@ File: doc/iconos/Decision.png Graphic file (type png)
 Package pdftex.def Info: doc/iconos/Decision.png used on input line 260.
 (pdftex.def)             Requested size: 33.12366pt x 26.34836pt.
 
-<doc/iconos/CNR.png, id=37, 44.41594pt x 15.80907pt> <use doc/iconos/CNR.png>
+<doc/iconos/CNR.png, id=40, 44.41594pt x 15.80907pt> <use doc/iconos/CNR.png>
 <use doc/iconos/CNR.png>
 File: doc/iconos/CNR.png Graphic file (type png)
  <use doc/iconos/CNR.png>
 Package pdftex.def Info: doc/iconos/CNR.png used on input line 264.
 (pdftex.def)             Requested size: 44.41582pt x 15.809pt.
 
-<doc/iconos/Operacion.png, id=38, 28.60687pt x 27.10126pt>
+<doc/iconos/Operacion.png, id=41, 28.60687pt x 27.10126pt>
 <use doc/iconos/Operacion.png> <use doc/iconos/Operacion.png>
 File: doc/iconos/Operacion.png Graphic file (type png)
 
@@ -634,12 +636,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--269
 
 LaTeX Info: Redefining \. on input line 269.
 LaTeX Info: Redefining \% on input line 269.
-[5 <./doc/iconos/AlmTemp.png> <./doc/iconos/Registro.png> <./doc/iconos/Emision
+[6 <./doc/iconos/AlmTemp.png> <./doc/iconos/Registro.png> <./doc/iconos/Emision
 Documento.png> <./doc/iconos/Firma.png> <./doc/iconos/DistribucionDocumentos.pn
 g>]
 LaTeX Info: Redefining \. on input line 269.
 LaTeX Info: Redefining \% on input line 269.
- [6 <./doc/iconos/Formulario.png> <./doc/iconos/AlmacenamientoPermanente.png> <
+ [7 <./doc/iconos/Formulario.png> <./doc/iconos/AlmacenamientoPermanente.png> <
 ./doc/iconos/OperacionControl.png> <./doc/iconos/Decision.png> <./doc/iconos/CN
 R.png> <./doc/iconos/Operacion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 274--276
@@ -733,17 +735,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--297
 
 LaTeX Info: Redefining \. on input line 297.
 LaTeX Info: Redefining \% on input line 297.
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 298--301
 
  []
 
 LaTeX Info: Redefining \. on input line 304.
 LaTeX Info: Redefining \% on input line 304.
-[8]
+[9]
 LaTeX Info: Redefining \. on input line 316.
 LaTeX Info: Redefining \% on input line 316.
- [9] <doc/formularios/OrdenCompra.png, id=55, 472.76625pt x 316.18124pt>
+ [10] <doc/formularios/OrdenCompra.png, id=58, 472.76625pt x 316.18124pt>
 File: doc/formularios/OrdenCompra.png Graphic file (type png)
 
 <use doc/formularios/OrdenCompra.png>
@@ -752,11 +754,11 @@ Package pdftex.def Info: doc/formularios/OrdenCompra.png used on input line 318
 (pdftex.def)             Requested size: 668.65645pt x 426.82143pt.
 LaTeX Info: Redefining \. on input line 320.
 LaTeX Info: Redefining \% on input line 320.
- [10 <./doc/formularios/OrdenCompra.png>]
+ [11 <./doc/formularios/OrdenCompra.png>]
 LaTeX Info: Redefining \. on input line 354.
 LaTeX Info: Redefining \% on input line 354.
 
-[11]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
@@ -798,7 +800,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
 LaTeX Info: Redefining \. on input line 365.
 LaTeX Info: Redefining \% on input line 365.
-[12] <doc/formularios/PedidoCotizacion.png, id=66, 472.76625pt x 361.35pt>
+[13] <doc/formularios/PedidoCotizacion.png, id=69, 472.76625pt x 361.35pt>
 File: doc/formularios/PedidoCotizacion.png Graphic file (type png)
 
 <use doc/formularios/PedidoCotizacion.png>
@@ -807,10 +809,10 @@ e 367.
 (pdftex.def)             Requested size: 625.97946pt x 426.79733pt.
 LaTeX Info: Redefining \. on input line 369.
 LaTeX Info: Redefining \% on input line 369.
- [13 <./doc/formularios/PedidoCotizacion.png>]
+ [14 <./doc/formularios/PedidoCotizacion.png>]
 LaTeX Info: Redefining \. on input line 387.
 LaTeX Info: Redefining \% on input line 387.
- [14]
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
@@ -847,13 +849,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
 LaTeX Info: Redefining \. on input line 398.
 LaTeX Info: Redefining \% on input line 398.
-[15]
+[16]
 LaTeX Info: Redefining \. on input line 401.
 LaTeX Info: Redefining \% on input line 401.
- [16]
+ [17]
 LaTeX Info: Redefining \. on input line 405.
 LaTeX Info: Redefining \% on input line 405.
- [17]
+ [18]
 Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
@@ -885,7 +887,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
 LaTeX Info: Redefining \. on input line 421.
 LaTeX Info: Redefining \% on input line 421.
-[18] <doc/BarbieriPagos.png, id=86, 391.4625pt x 733.99219pt>
+[19] <doc/BarbieriPagos.png, id=89, 391.4625pt x 733.99219pt>
 File: doc/BarbieriPagos.png Graphic file (type png)
 
 <use doc/BarbieriPagos.png>
@@ -898,7 +900,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--424
 
 LaTeX Info: Redefining \. on input line 425.
 LaTeX Info: Redefining \% on input line 425.
-[19 <./doc/BarbieriPagos.png>] <use doc/iconos/AlmTemp.png>
+[20 <./doc/BarbieriPagos.png>] <use doc/iconos/AlmTemp.png>
 <use doc/iconos/AlmTemp.png>
 File: doc/iconos/AlmTemp.png Graphic file (type png)
  <use doc/iconos/AlmTemp.png>
@@ -1064,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 428--469
 
 LaTeX Info: Redefining \. on input line 469.
 LaTeX Info: Redefining \% on input line 469.
-[20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 472--475
 
  []
@@ -1076,7 +1078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 475--478
 
 LaTeX Info: Redefining \. on input line 492.
 LaTeX Info: Redefining \% on input line 492.
-[21]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 492--495
 
  []
@@ -1113,7 +1115,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--513
 
 LaTeX Info: Redefining \. on input line 516.
 LaTeX Info: Redefining \% on input line 516.
-[22] <doc/formularios/cheque.png, id=99, 1061.9675pt x 433.62pt>
+[23] <doc/formularios/cheque.png, id=102, 1061.9675pt x 433.62pt>
 File: doc/formularios/cheque.png Graphic file (type png)
 
 <use doc/formularios/cheque.png>
@@ -1126,10 +1128,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
 LaTeX Info: Redefining \. on input line 522.
 LaTeX Info: Redefining \% on input line 522.
-[23 <./doc/formularios/cheque.png (PNG copy)>]
+[24 <./doc/formularios/cheque.png (PNG copy)>]
 LaTeX Info: Redefining \. on input line 541.
 LaTeX Info: Redefining \% on input line 541.
- [24]
+ [25]
 Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
@@ -1166,7 +1168,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--550
 
 LaTeX Info: Redefining \. on input line 552.
 LaTeX Info: Redefining \% on input line 552.
-[25] <doc/formularios/CC.png, id=110, 1171.37625pt x 1606.0pt>
+[26] <doc/formularios/CC.png, id=113, 1171.37625pt x 1606.0pt>
 File: doc/formularios/CC.png Graphic file (type png)
 
 <use doc/formularios/CC.png>
@@ -1179,14 +1181,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
 LaTeX Info: Redefining \. on input line 556.
 LaTeX Info: Redefining \% on input line 556.
-[26 <./doc/formularios/CC.png>]
+[27 <./doc/formularios/CC.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 558--594
 
  []
 
 LaTeX Info: Redefining \. on input line 595.
 LaTeX Info: Redefining \% on input line 595.
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 597--598
 
  []
@@ -1228,7 +1230,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 603--604
 
 LaTeX Info: Redefining \. on input line 606.
 LaTeX Info: Redefining \% on input line 606.
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 615--616
 
  []
@@ -1260,7 +1262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
 LaTeX Info: Redefining \. on input line 627.
 LaTeX Info: Redefining \% on input line 627.
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
@@ -1307,7 +1309,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
 LaTeX Info: Redefining \. on input line 647.
 LaTeX Info: Redefining \% on input line 647.
-[30] <doc/BarbieriProduccion.png, id=127, 1810.765pt x 1275.76625pt>
+[31] <doc/BarbieriProduccion.png, id=130, 1810.765pt x 1275.76625pt>
 File: doc/BarbieriProduccion.png Graphic file (type png)
 
 <use doc/BarbieriProduccion.png>
@@ -1324,7 +1326,7 @@ Overfull \vbox (1.82906pt too high) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 651.
 LaTeX Info: Redefining \% on input line 651.
 
-[31 <./doc/BarbieriProduccion.png>] <use doc/iconos/AlmTemp.png>
+[32 <./doc/BarbieriProduccion.png>] <use doc/iconos/AlmTemp.png>
 <use doc/iconos/AlmTemp.png>
 File: doc/iconos/AlmTemp.png Graphic file (type png)
  <use doc/iconos/AlmTemp.png>
@@ -1518,10 +1520,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 653--736
 
 LaTeX Info: Redefining \. on input line 736.
 LaTeX Info: Redefining \% on input line 736.
-[32]
+[33]
 LaTeX Info: Redefining \. on input line 736.
 LaTeX Info: Redefining \% on input line 736.
- [33] <doc/formularios/OrdenProd.png, id=137, 1410.26875pt x 1844.8925pt>
+ [34] <doc/formularios/OrdenProd.png, id=140, 1410.26875pt x 1844.8925pt>
 File: doc/formularios/OrdenProd.png Graphic file (type png)
 
 <use doc/formularios/OrdenProd.png>
@@ -1534,13 +1536,13 @@ Overfull \hbox (25.46095pt too wide) in paragraph at lines 740--741
 
 LaTeX Info: Redefining \. on input line 742.
 LaTeX Info: Redefining \% on input line 742.
-[34]
+[35]
 LaTeX Info: Redefining \. on input line 746.
 LaTeX Info: Redefining \% on input line 746.
- [35 <./doc/formularios/OrdenProd.png>]
+ [36 <./doc/formularios/OrdenProd.png>]
 LaTeX Info: Redefining \. on input line 773.
 LaTeX Info: Redefining \% on input line 773.
- [36]
+ [37]
 Underfull \hbox (badness 10000) in paragraph at lines 775--776
 
  []
@@ -1582,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 781--782
 
 LaTeX Info: Redefining \. on input line 784.
 LaTeX Info: Redefining \% on input line 784.
-[37] <doc/formularios/HojaRuta.png, id=151, 707.64375pt x 595.22375pt>
+[38] <doc/formularios/HojaRuta.png, id=154, 707.64375pt x 595.22375pt>
 File: doc/formularios/HojaRuta.png Graphic file (type png)
 
 <use doc/formularios/HojaRuta.png>
@@ -1595,10 +1597,10 @@ Overfull \hbox (16.01694pt too wide) in paragraph at lines 786--787
 
 LaTeX Info: Redefining \. on input line 788.
 LaTeX Info: Redefining \% on input line 788.
-[38 <./doc/formularios/HojaRuta.png>]
+[39 <./doc/formularios/HojaRuta.png>]
 LaTeX Info: Redefining \. on input line 814.
 LaTeX Info: Redefining \% on input line 814.
- [39]
+ [40]
 Underfull \hbox (badness 10000) in paragraph at lines 816--817
 
  []
@@ -1645,7 +1647,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 831--841
 
 LaTeX Info: Redefining \. on input line 841.
 LaTeX Info: Redefining \% on input line 841.
-[40] <doc/BarbieriCobranzas.png, id=161, 594.72188pt x 997.47656pt>
+[41] <doc/BarbieriCobranzas.png, id=164, 594.72188pt x 997.47656pt>
 File: doc/BarbieriCobranzas.png Graphic file (type png)
 
 <use doc/BarbieriCobranzas.png>
@@ -1653,10 +1655,10 @@ Package pdftex.def Info: doc/BarbieriCobranzas.png used on input line 843.
 (pdftex.def)             Requested size: 416.30247pt x 698.22885pt.
 LaTeX Info: Redefining \. on input line 845.
 LaTeX Info: Redefining \% on input line 845.
- [41]
+ [42]
 LaTeX Info: Redefining \. on input line 845.
 LaTeX Info: Redefining \% on input line 845.
- [42 <./doc/BarbieriCobranzas.png>]
+ [43 <./doc/BarbieriCobranzas.png>]
 <use doc/iconos/EmisionDocumento.png> <use doc/iconos/EmisionDocumento.png>
 File: doc/iconos/EmisionDocumento.png Graphic file (type png)
 
@@ -1841,18 +1843,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 850--969
 
 LaTeX Info: Redefining \. on input line 969.
 LaTeX Info: Redefining \% on input line 969.
-[43]
-LaTeX Info: Redefining \. on input line 969.
-LaTeX Info: Redefining \% on input line 969.
- [44]
+[44]
 LaTeX Info: Redefining \. on input line 969.
 LaTeX Info: Redefining \% on input line 969.
  [45]
+LaTeX Info: Redefining \. on input line 969.
+LaTeX Info: Redefining \% on input line 969.
+ [46]
 Underfull \hbox (badness 10000) in paragraph at lines 970--975
 
  []
 
-<doc/formularios/Recibo.png, id=178, 1016.79875pt x 1533.73pt>
+<doc/formularios/Recibo.png, id=181, 1016.79875pt x 1533.73pt>
 File: doc/formularios/Recibo.png Graphic file (type png)
 
 <use doc/formularios/Recibo.png>
@@ -1860,17 +1862,17 @@ Package pdftex.def Info: doc/formularios/Recibo.png used on input line 979.
 (pdftex.def)             Requested size: 457.55522pt x 690.17213pt.
 LaTeX Info: Redefining \. on input line 981.
 LaTeX Info: Redefining \% on input line 981.
- [46]
+ [47]
 LaTeX Info: Redefining \. on input line 981.
 LaTeX Info: Redefining \% on input line 981.
- [47 <./doc/formularios/Recibo.png>]
+ [48 <./doc/formularios/Recibo.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 983--1011
 
  []
 
 LaTeX Info: Redefining \. on input line 1012.
 LaTeX Info: Redefining \% on input line 1012.
-[48]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 1014--1015
 
  []
@@ -1907,7 +1909,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 
 LaTeX Info: Redefining \. on input line 1023.
 LaTeX Info: Redefining \% on input line 1023.
-[49] <doc/formularios/ListadoCob.png, id=192, 611.28375pt x 471.7625pt>
+[50] <doc/formularios/ListadoCob.png, id=196, 611.28375pt x 471.7625pt>
 File: doc/formularios/ListadoCob.png Graphic file (type png)
 
 <use doc/formularios/ListadoCob.png>
@@ -1921,14 +1923,14 @@ Overfull \hbox (9.69734pt too wide) in paragraph at lines 1025--1026
 
 LaTeX Info: Redefining \. on input line 1026.
 LaTeX Info: Redefining \% on input line 1026.
-[50 <./doc/formularios/ListadoCob.png>]
+[51 <./doc/formularios/ListadoCob.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1028--1042
 
  []
 
 LaTeX Info: Redefining \. on input line 1043.
 LaTeX Info: Redefining \% on input line 1043.
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 1045--1046
 
  []
@@ -2010,7 +2012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1059--1073
 
 LaTeX Info: Redefining \. on input line 1073.
 LaTeX Info: Redefining \% on input line 1073.
-[52] <doc/BarbieriVentas.png, id=203, 539.76656pt x 888.31876pt>
+[53] <doc/BarbieriVentas.png, id=206, 539.76656pt x 888.31876pt>
 File: doc/BarbieriVentas.png Graphic file (type png)
 
 <use doc/BarbieriVentas.png>
@@ -2018,7 +2020,7 @@ Package pdftex.def Info: doc/BarbieriVentas.png used on input line 1076.
 (pdftex.def)             Requested size: 431.81383pt x 710.65598pt.
 LaTeX Info: Redefining \. on input line 1077.
 LaTeX Info: Redefining \% on input line 1077.
- [53] <use doc/iconos/EmisionDocumento.png>
+ [54] <use doc/iconos/EmisionDocumento.png>
 <use doc/iconos/EmisionDocumento.png>
 File: doc/iconos/EmisionDocumento.png Graphic file (type png)
  <use doc/iconos/EmisionDocumento.png>
@@ -2037,7 +2039,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1079--1087
 
 LaTeX Info: Redefining \. on input line 1087.
 LaTeX Info: Redefining \% on input line 1087.
-[54 <./doc/BarbieriVentas.png>] <use doc/iconos/AlmTemp.png>
+[55 <./doc/BarbieriVentas.png>] <use doc/iconos/AlmTemp.png>
 <use doc/iconos/AlmTemp.png>
 File: doc/iconos/AlmTemp.png Graphic file (type png)
  <use doc/iconos/AlmTemp.png>
@@ -2087,7 +2089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1115--1128
 
 LaTeX Info: Redefining \. on input line 1128.
 LaTeX Info: Redefining \% on input line 1128.
-[55] <use doc/iconos/DistribucionDocumentos.png>
+[56] <use doc/iconos/DistribucionDocumentos.png>
 <use doc/iconos/DistribucionDocumentos.png>
 File: doc/iconos/DistribucionDocumentos.png Graphic file (type png)
 
@@ -2157,7 +2159,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1162--1169
 
 LaTeX Info: Redefining \. on input line 1169.
 LaTeX Info: Redefining \% on input line 1169.
-[56] <use doc/iconos/Decision.png> <use doc/iconos/Decision.png>
+[57] <use doc/iconos/Decision.png> <use doc/iconos/Decision.png>
 File: doc/iconos/Decision.png Graphic file (type png)
 
 <use doc/iconos/Decision.png>
@@ -2195,32 +2197,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
 
  []
 
-LaTeX Info: Redefining \. on input line 1213.
-LaTeX Info: Redefining \% on input line 1213.
-[57] (build/informe.aux
+LaTeX Info: Redefining \. on input line 1220.
+LaTeX Info: Redefining \% on input line 1220.
+[58]
+LaTeX Info: Redefining \. on input line 1260.
+LaTeX Info: Redefining \% on input line 1260.
+ [59]
+LaTeX Info: Redefining \. on input line 1260.
+LaTeX Info: Redefining \% on input line 1260.
+ [60] (build/informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 4307 strings out of 493485
- 61948 string characters out of 3143526
+ 4308 strings out of 493485
+ 61968 string characters out of 3143526
  143057 words of memory out of 3000000
- 7525 multiletter control sequences out of 15000+200000
+ 7526 multiletter control sequences out of 15000+200000
  11327 words of font info for 41 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,12n,43p,903b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,12n,43p,903b,622s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt10.pfb>
-Output written on build/informe.pdf (58 pages, 4709850 bytes).
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb>
+Output written on build/informe.pdf (61 pages, 4719416 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 263 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
