@@ -51,4 +51,16 @@
 \contentsline {subsubsection}{\numberline {5.6.1}Formulario de Remito}{60}
 \contentsline {subsubsection}{\numberline {5.6.2}Manual del formulario de Remito}{61}
 \contentsline {subsubsection}{\numberline {5.6.3}Formulario de Factura}{62}
-\contentsline {subsubsection}{\numberline {5.6.4}Manual del formulario de la factura}{63}
+\contentsline {subsubsection}{\numberline {5.6.4}Manual del formulario de Factura}{63}
+\contentsline {section}{\numberline {6}Presupuesto}{64}
+\contentsline {subsection}{\numberline {6.1}Enunciado}{64}
+\contentsline {subsection}{\numberline {6.2}Pronostico de Ventas}{66}
+\contentsline {subsection}{\numberline {6.3}Presupuesto de Produccion}{67}
+\contentsline {subsection}{\numberline {6.4}Presupuesto de Mano de Obra}{68}
+\contentsline {subsection}{\numberline {6.5}Presupuesto de Materias Primas}{69}
+\contentsline {subsection}{\numberline {6.6}Presupuesto de Ventas}{70}
+\contentsline {subsection}{\numberline {6.7}Presupuesto de Facturacion}{70}
+\contentsline {subsection}{\numberline {6.8}Presupuesto de Cobranzas}{71}
+\contentsline {subsection}{\numberline {6.9}Gastos e Inversiones}{72}
+\contentsline {subsection}{\numberline {6.10}Presupuesto Financiero}{73}
+\contentsline {subsection}{\numberline {6.11}Cuadro de Resultados}{74}
