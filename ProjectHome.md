@@ -1,0 +1,1 @@
+Materia que consiste en armar un seguimiento del circuito o sistema en función del area o sector de la empresa que se quiera reportar.
